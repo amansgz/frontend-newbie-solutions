@@ -1,0 +1,196 @@
+:root {
+  /* Base colors: Main project palette */
+  --blue-100: hsl(225, 100%, 94%);
+  --blue-700: hsl(245, 75%, 52%);
+  --blue-50: hsl(225, 100%, 98%);
+  --gray-600: hsl(224, 23%, 55%);
+  --blue-950: hsl(223, 47%, 23%);
+
+  --ff-primary: "Red Hat Display", sans-serif;
+}
+:root {
+  /* Purpose colors: Used for specific elements*/
+  --clr-bg-body: var(--blue-100);
+  --clr-primary-text: var(--blue-950);
+
+  --clr-card-heading: var(--blue-950);
+  --clr-card-description: var(--gray-600);
+
+  --clr-bg-card-plan: var(--blue-50);
+  --clr-text-plan-link: var(--blue-700);
+
+  --clr-text-btn-pay: var(--blue-50);
+  --clr-bg-btn-pay: var(--blue-700);
+  --clr-border-btn-pay: var(--blue-950);
+
+  --clr-text-btn-cancel: var(--gray-600);
+  --clr-text-hover-btn-cancel: var(--blue-950);
+
+  --clr-hover-attribution: var(--blue-700);
+}
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: var(--ff-primary);
+
+  background-image: url("../assets/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  background-color: var(--clr-bg-body);
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  padding: 1rem;
+}
+
+.summary-card {
+  width: 100%;
+  max-width: 330px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.summary-card__image img {
+  display: block;
+  width: 100%;
+}
+.summary-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.summary-card__title {
+  font-weight: 900;
+  color: var(--clr-card-heading);
+}
+.summary-card__description {
+  width: 24ch;
+  color: var(--clr-card-description);
+  line-height: 1.5;
+}
+.summary-card__plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: var(--clr-bg-card-plan);
+  border-radius: 12px;
+}
+
+.summary-card__plan-info {
+  text-align: left;
+}
+.summary-card__plan-title {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  color: var(--clr-card-heading);
+}
+.summary-card__plan-price {
+  color: var(--clr-card-description);
+}
+.summary-card__plan-link {
+  color: var(--clr-text-plan-link);
+  transition: 0.3s ease;
+}
+.summary-card__plan-link:hover,
+.summary-card__plan-link:focus {
+  text-decoration: none;
+  color: var(--clr-text-plan-link);
+  cursor: pointer;
+}
+.summary-card__button-pay {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  color: var(--clr-text-btn-pay);
+
+  border-radius: 12px;
+  border: 1px solid var(--clr-border-btn-pay);
+  background-color: var(--clr-bg-btn-pay);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+.summary-card__button-pay:hover,
+.summary-card__button-pay:focus {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.summary-card__button-cancel {
+  font-weight: 900;
+  color: var(--clr-text-btn-cancel);
+  background-color: transparent;
+  border: none;
+  transition: 0.3s ease;
+}
+.summary-card__button-cancel:hover,
+.summary-card__button-cancel:focus {
+  color: var(--clr-text-hover-btn-cancel);
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: var(--clr-primary-text);
+}
+.footer__attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.footer__attribution a {
+  text-decoration: none;
+  color: var(--clr-primary-text);
+  transition: color 0.1s ease;
+}
+.footer__attribution a:hover,
+.footer__attribution a:focus {
+  color: var(--clr-hover-attribution);
+}
+
+.sr-only {
+  /* Visually hides element but keeps it accesible for screen readers */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("../assets/pattern-background-desktop.svg");
+  }
+}
