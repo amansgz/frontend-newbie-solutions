@@ -39,8 +39,6 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 
   font-family: var(--ff-primary);
@@ -56,7 +54,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
   padding: 1rem;
 }
 
@@ -155,7 +152,6 @@ main {
 }
 
 .footer {
-  width: 100%;
   padding: 1rem;
   text-align: center;
   color: var(--clr-primary-text);
@@ -175,7 +171,7 @@ main {
 .footer__attribution a:focus {
   color: var(--clr-hover-attribution);
 }
-
+/* Utilities */
 .sr-only {
   /* Visually hides element but keeps it accesible for screen readers */
   position: absolute;

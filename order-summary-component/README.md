@@ -2,7 +2,7 @@
 
 This is a solution to the Order Summary Card Component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## ![Design preview for the Order summary card component](./assets/desktop-design.jpg)
+![Design preview for the Order summary card component](./assets/desktop-design.jpg)
 
 ## Technologies Used
 
@@ -24,8 +24,9 @@ This is a solution to the Order Summary Card Component challenge on Frontend Men
 
 ## Links
 
-- [Solution]()
 - [Live Site]()
+- [Solution]()
+- [Code]()
 
 ---
 
