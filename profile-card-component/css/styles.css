@@ -60,7 +60,7 @@ main {
 }
 .profile-card {
   width: 100%;
-  width: 340px;
+  max-width: 360px;
   background-color: var(--clr-bg-card);
   border-radius: 8px;
   overflow: hidden;
@@ -91,7 +91,7 @@ main {
   margin-top: -3rem; /* Compensate photo translate */
 }
 .profile-card__name {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 900;
   color: var(--clr-user-name);
 }
@@ -107,7 +107,7 @@ main {
 }
 
 .profile-card__footer {
-  padding: 1rem 0;
+  padding: 1.6rem 0;
   border-top: 1px solid var(--clr-border-top-line);
 }
 .profile-card__stats-list {
@@ -119,7 +119,7 @@ main {
   text-align: center;
 }
 .profile-card__stats-list p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 900;
   line-height: 1.5;
   color: var(--clr-stats-number);
