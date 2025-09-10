@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stats Preview Card Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <picture class="card__image">
+          <source
+            srcset="./styles/images/image-header-desktop.jpg"
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./styles/images/image-header-mobile.jpg"
+            alt="Data analitycs team  working at office"
+          />
+        </picture>
+
+        <div class="card__body">
+          <h1 class="card__title">
+            Get <strong>insights</strong> that help your business grow.
+          </h1>
+          <p class="card__text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="stats__container">
+            <p class="stats__item">
+              10k+
+              <span> companies </span>
+            </p>
+            <p class="stats__item">
+              314
+              <span> templates </span>
+            </p>
+            <p class="stats__item">
+              12m+
+              <span> queries </span>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor </a
+        ><br />
+        Coded by
+        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+      </small>
+    </footer>
+  </body>
+</html>

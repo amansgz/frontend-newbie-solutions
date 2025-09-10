@@ -1,0 +1,136 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --dark-blue: hsl(216, 50%, 16%);
+  --blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --clr-background-image: hsl(178, 100%, 28%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue);
+}
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+/*************************
+  ARTICLE CARD
+**************************/
+.card {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+  background-color: var(--dark-blue);
+  color: var(--soft-blue);
+  border-radius: 10px;
+  box-shadow: 20px 35px 28px rgba(0, 0, 0, 0.15);
+}
+.card__image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-image: url("./images/image-equilibrium.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--clr-background-image);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.card__image:hover,
+.card__image:focus-visible {
+  content: url(./images/icon-view.svg);
+  background-blend-mode: screen;
+  cursor: pointer;
+  padding: 6em;
+}
+.card__content {
+  margin-top: 1.5rem;
+}
+.card__title {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+.card__title:hover,
+.card__title:focus-visible {
+  color: var(--cyan);
+}
+.card__text {
+  width: 26ch;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+.card__current__states {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.state__ethereum,
+.state__days__left {
+  display: flex;
+  align-items: center;
+}
+.state__ethereum span {
+  margin-left: 0.3rem;
+  color: var(--cyan);
+}
+.state__days__left span {
+  margin-left: 0.3rem;
+}
+.card__footer__attribution {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+  border-top: 1px solid var(--blue);
+}
+.card__footer__attribution img {
+  display: block;
+  width: 30px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+.card__footer__attribution p a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+.card__footer__attribution p a:hover,
+.card__footer__attribution p a:focus-visible {
+  color: var(--cyan);
+}
+/*************************
+  FOOTER
+**************************/
+.footer {
+  margin-top: auto;
+  padding: 2em;
+  text-align: center;
+  color: var(--white);
+}
+.footer__attribution a {
+  text-decoration: none;
+  color: var(--soft-blue);
+  transition: color 0.1s ease;
+}
+.footer__attribution a:hover,
+.footer__attribution a:focus-visible {
+  color: var(--cyan);
+}

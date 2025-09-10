@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Apparel Coming Soon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./javascript/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <figure class="header__logo">
+        <img src="./styles/images/logo.svg" alt="logo" />
+      </figure>
+    </header>
+
+    <main>
+      <section class="hero__section">
+        <div class="grid__container">
+          <picture class="hero__image">
+            <source
+              srcset="./styles/images/hero-desktop.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              class="main-img"
+              src="./styles/images/hero-mobile.jpg"
+              alt="Base Apparel model"
+            />
+          </picture>
+          <div class="content">
+            <h1 class="content__title">
+              <span> We're </span>
+              coming <br />
+              soon
+            </h1>
+            <p class="content__text">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form>
+              <div class="input__container">
+                <input
+                  class="input__email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+                <label class="error__icon" for="email"> </label>
+                <button class="btn__submit" aria-label="submit">
+                  <img src="./styles/images/icon-arrow.svg" alt="" />
+                </button>
+              </div>
+              <p class="error__message">Please provide a valid email</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <small class="footer__attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor </a
+        ><br />
+        Coded by
+        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+      </small>
+    </footer>
+  </body>
+</html>

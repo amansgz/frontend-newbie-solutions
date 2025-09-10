@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Preview Card Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <div class="card__image"></div>
+        <div class="card__content">
+          <h1>
+            <a href="#" class="card__title"> Equilibrium #3429 </a>
+          </h1>
+          <p class="card__text">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+        </div>
+
+        <div class="card__current__states">
+          <div class="state__ethereum">
+            <img src="./styles/images/icon-ethereum.svg" alt="icon ethereum" />
+            <span> 0.041 ETH </span>
+          </div>
+          <div class="state__days__left">
+            <img src="./styles/images/icon-clock.svg" alt="icon clock" />
+            <span> 3 days left </span>
+          </div>
+        </div>
+
+        <footer class="card__footer">
+          <div class="card__footer__attribution">
+            <img
+              src="./styles/images/image-avatar.png"
+              alt="avatar Jules Wyvern"
+            />
+            <p>
+              Creation of
+              <a href="#"> Jules Wyvern </a>
+            </p>
+          </div>
+        </footer>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <small class="footer__attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor </a
+        ><br />
+        Coded by
+        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+      </small>
+    </footer>
+  </body>
+</html>
