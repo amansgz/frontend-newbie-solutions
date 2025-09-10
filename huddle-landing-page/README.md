@@ -2,7 +2,7 @@
 
 This is a solution to the Huddle landing page with single introductory section challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## ![Design preview for the Huddle landing page with single introductory section challenge](./assets/images/desktop-design.jpg)
+![Design preview for the Huddle landing page with single introductory section challenge](./assets/images/desktop-design.jpg)
 
 ---
 
@@ -18,8 +18,9 @@ This is a solution to the Huddle landing page with single introductory section c
 
 ## Links
 
-- [Solution]()
 - [Live Site]()
+- [Solution]()
+- [Code]()
 
 ---
 
