@@ -25,9 +25,7 @@
   margin: 0;
   padding: 0;
 }
-* {
-  outline: 1px solid red;
-}
+
 body {
   display: flex;
   flex-direction: column;
@@ -44,6 +42,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 .qr-card {
   display: flex;
@@ -68,13 +67,13 @@ body {
   border-radius: 12px;
 }
 .qr-card__title {
-  max-width: 18ch;
-  font-size: 1.4rem;
+  width: 20ch;
+  font-size: 1.35rem;
   font-weight: bold;
   color: var(--clr-card-title);
 }
 .qr-card__text {
-  max-width: 25ch;
+  width: 27ch;
   font-size: 0.9rem;
   line-height: 1.5;
   color: var(--clr-card-text);
