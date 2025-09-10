@@ -2,6 +2,8 @@
 
 This is a solution to the Profile Card Component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+![Desktop preview design](./assets/desktop-design.jpg)
+
 ---
 
 ## Technologies Used
@@ -24,12 +26,13 @@ This is a solution to the Profile Card Component challenge on Frontend Mentor. F
 
 ## Links
 
-- [Solution]()
 - [Live Site]()
+- [Solution]()
+- [Code]()
 
 ---
 
-## Credits and Acknowledgments
+## Credits and Acknowledgements
 
 This project was built as a solution to a design challenge from Frontend Mentor.
 
