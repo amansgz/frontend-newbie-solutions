@@ -4,8 +4,6 @@ This is a solution to the Product Preview Card Component challenge on Frontend M
 
 ![Design preview for the Product Preview Card Component challenge](./assets/desktop-preview.jpg)
 
----
-
 ## Technologies Used
 
 - Semantic HTML5 markup
@@ -14,15 +12,9 @@ This is a solution to the Product Preview Card Component challenge on Frontend M
 - Flexbox
 - Mobile-first workflow
 
----
-
 ## Links
 
 - [Live Site]()
-- [Solution]()
-- [Code]()
-
----
 
 ## Credits and Acknowledgements
 

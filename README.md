@@ -2,43 +2,43 @@
 
 - QR code component
 
-  [Live Site]() - [Code]()
+  [Live Site](https://qr-card-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/qr-code-component)
   <div>
     <img src="./qr-code-component/assets/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>
 
 - Profile card component
-  [Live Site]() - [Code]()
+  [Live Site](https://profile-card-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/profile-card-component)
   <div>
     <img src="./profile-card-component/assets/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>
 
 - Order Summary Component
-  [Live Site]() - [Code]()
+  [Live Site](https://order-summary-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/order-summary-component)
   <div>
     <img src="./order-summary-component/assets/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>
 
 - Product Preview Card Component
-  [Live Site]() - [Code]()
+  [Live Site]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/product-preview-card-component)
   <div>
     <img src="./product-preview-card-component/assets/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>
 
 - Single Price Grid Component
-  [Live Site]() - [Code]()
+  [Live Site](https://single-price-grid-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/single-price-grid-component)
   <div>
     <img src="./single-price-grid-component/assets/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>
 
 - Huddle Landing Page
-  [Live Site]() - [Code]()
+  [Live Site](https://huddle-landing-page-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/huddle-landing-page)
   <div>
     <img src="./huddle-landing-page/assets/images/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>
 
 - Ping Coming Soon Page
-  [Live Site]() - [Code]()
+  [Live Site]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/ping-soming-soon-page)
   <div>
     <img src="./ping-coming-soon-page/assets/desktop-design.jpg" alt="Single price grid component desktop design" width="230">
   </div>

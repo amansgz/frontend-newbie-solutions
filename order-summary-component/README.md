@@ -12,23 +12,15 @@ This is a solution to the Order Summary Card Component challenge on Frontend Men
 - Flexbox
 - Mobile-first workflow
 
----
-
 ## Features
 
 - **Responsive Layout:** The component adapts to different screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
 - **BEM methodology:** Implementing a more structuring naming convention for CSS classes to keep the codebase clean and scalable.
 - **Clean and Accesible Code:** The project uses semantic HTML and includes a screen reader-only heading to improve accessibility and provide proper context for assistive technologies.
 
----
-
 ## Links
 
-- [Live Site]()
-- [Solution]()
-- [Code]()
-
----
+- [Live Site](https://order-summary-solution-css.netlify.app)
 
 ## Credits and Acknowledgements
 

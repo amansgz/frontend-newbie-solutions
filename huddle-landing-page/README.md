@@ -4,8 +4,6 @@ This is a solution to the Huddle landing page with single introductory section c
 
 ![Design preview for the Huddle landing page with single introductory section challenge](./assets/images/desktop-design.jpg)
 
----
-
 ## Technologies Used
 
 - Semantic HTML5 markup
@@ -14,15 +12,9 @@ This is a solution to the Huddle landing page with single introductory section c
 - Flexbox
 - Mobile-first workflow
 
----
-
 ## Links
 
-- [Live Site]()
-- [Solution]()
-- [Code]()
-
----
+- [Live Site](https://huddle-landing-page-solution-css.netlify.app)
 
 ## Credits and Acknowledgements
 

@@ -4,8 +4,6 @@ This is a solution to the Single Price Grid Component challenge on Frontend Ment
 
 ![Design preview for the Single Price Grid Component challenge](./assets/desktop-design.jpg)
 
----
-
 ## Technologies Used
 
 - Semantic HTML5 markup
@@ -15,21 +13,13 @@ This is a solution to the Single Price Grid Component challenge on Frontend Ment
 - Grid CSS
 - Mobile-first workflow
 
----
-
 ## Features
 
 - **Responsive Layout:** The component adapts to different screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
 
----
-
 ## Links
 
-- [Live Site]()
-- [Solution]()
-- [Code]()
-
----
+- [Live Site](https://single-price-grid-solution-css.netlify.app)
 
 ## Credits and Acknowledgements
 

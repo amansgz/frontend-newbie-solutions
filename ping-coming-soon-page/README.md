@@ -1,4 +1,6 @@
-# 👩‍💻 Ping coming soon page
+# Ping coming Soon Page
+
+This is a solution to the Ping Coming Soon Page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ![Design preview for the coming soon page coding challenge](./styles/images/preview.png)
 
@@ -15,8 +17,6 @@ Users should be able to:
   - The `input` field is empty. The message for this error should say _"Whoops! It looks like you forgot to add your email"_
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Please provide a valid email address"_
 
----
-
 ## Built with
 
 - Semantic HTML5 markup
@@ -26,9 +26,13 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
----
-
 ## Links
 
-- [Solution]()
 - [Live Site]()
+
+## Credits and Acknowledgements
+
+This project was built as a solution to a design challenge from Frontend Mentor.
+
+- **Design:** Frontend Mentor
+- **Coded by:** @amansgz
