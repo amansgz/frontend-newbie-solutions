@@ -1,0 +1,219 @@
+:root {
+  /* Primary colors */
+  --teal-500: hsl(179, 62%, 43%);
+  --teal-400: hsl(179, 44%, 57%);
+  --green-400: hsl(71, 73%, 54%);
+
+  /* Neutral colors */
+  --teal-100: hsl(204, 43%, 93%);
+  --gray-500: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Purpose colors: Used for specific elements */
+  --clr-bg-body: var(--teal-100);
+
+  /* card__intro */
+  --clr-bg-intro: var(--white);
+  --clr-intro-title: var(--teal-500);
+  --clr-intro-subtitle: var(--green-400);
+  --clr-intro-text: var(--gray-500);
+
+  /* card__subscription */
+  --clr-bg-subscription: var(--teal-500);
+  --clr-text-subscription: var(--white);
+  --clr-price-period: var(--teal-100);
+  --clr-button-subscription: var(--green-400);
+  --clr-text-button: var(--white);
+
+  /* card__features */
+  --clr-bg-features: var(--teal-400);
+  --clr-text-features: var(--white);
+
+  /* footer */
+  --clr-text-attribution: var(--gray-500);
+  --clr-hover-attribution: var(--teal-500);
+
+  /* Fonts */
+  --ff-primary: "Karla", sans-serif;
+}
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: var(--ff-primary);
+  background-color: var(--clr-bg-body);
+}
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+/* Intro section card */
+.card__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem;
+  background-color: var(--clr-bg-intro);
+}
+.card__title {
+  font-size: 1rem;
+  color: var(--clr-intro-title);
+}
+.card__subtitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--clr-intro-subtitle);
+}
+.card__text {
+  width: 34ch;
+  font-size: 0.8rem;
+  color: var(--clr-intro-text);
+  line-height: 1.7;
+}
+/* Subscription section card */
+.card__subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem;
+  background-color: var(--clr-bg-subscription);
+  color: var(--clr-text-subscription);
+}
+.card__subscription-title {
+  font-size: 1rem;
+}
+.card__subscription-text {
+  font-size: 0.9rem;
+}
+.card__price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card__price-amount {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.card__price-period {
+  font-size: 0.8rem;
+  color: var(--clr-price-period);
+}
+.card__button {
+  display: block;
+  padding: 0.7rem;
+
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--clr-button-subscription);
+  color: var(--clr-text-button);
+  border-radius: 4px;
+  box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.1s ease;
+}
+.card__button:hover,
+.card__button:focus {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* Features section card */
+.card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5rem;
+  font-weight: 300;
+  background-color: var(--clr-bg-features);
+  color: var(--clr-text-features);
+}
+.card__features-title {
+  font-size: 1rem;
+}
+.card__features-list {
+  list-style-type: none;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+/* Footer with attribution */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  color: var(--clr-text-attribution);
+}
+.footer__attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__attribution a {
+  text-decoration: none;
+  color: var(--clr-text-attribution);
+  transition: color 0.1s ease;
+}
+.footer__attribution a:hover,
+.footer__attribution a:focus {
+  color: var(--clr-hover-attribution);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 280px;
+    width: 600px;
+  }
+  .card__intro {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    padding: 2.5rem;
+  }
+  .card__subscription {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 2.5rem;
+  }
+  .card__features {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 2.5rem;
+  }
+  .card__title {
+    font-size: 1.3rem;
+  }
+  .card__subtitle,
+  .card__subscription-title,
+  .card__features-title {
+    font-size: 1rem;
+  }
+  .card__text {
+    font-size: 0.9rem;
+    width: 55ch;
+  }
+  .card__button {
+    margin-top: 1rem;
+  }
+  .card__features-list {
+    font-size: 0.9rem;
+  }
+  .subscription .signup__link:hover {
+    background-color: var(--bright-light-yellow);
+  }
+}
