@@ -1,9 +1,21 @@
 :root {
-  --clr-heading: hsl(218, 44%, 22%);
-  --clr-text: hsl(220, 15%, 55%);
-  --clr-link: hsl(224, 82%, 67%);
-  --clr-link-hover: hsl(224, 82%, 50%);
+  /* Base colors: Main project palette*/
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --white: hsl(0, 0%, 100%);
 
+  /* Purpose colors: Used for specific elements */
+  --clr-bg-body: var(--slate-300);
+
+  --clr-bg-card: var(--white);
+  --clr-card-title: var(--slate-900);
+  --clr-card-text: var(--slate-500);
+
+  --clr-attribution-link: var(--slate-500);
+  --clr-attribution-link-hover: var(--slate-900);
+
+  /* Fonts */
   --ff-primary: "Outfit", sans-serif;
 }
 *:before,
@@ -13,19 +25,18 @@
   margin: 0;
   padding: 0;
 }
-
+* {
+  outline: 1px solid red;
+}
 body {
-  /* Aligns body content */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+
   font-family: var(--ff-primary);
-  color: var(--clr-text);
   background-color: var(--clr-bg-body);
 }
-main {
+.main-content {
   /* Pushes footer to the bottom */
   flex-grow: 1;
 
@@ -33,43 +44,42 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Limits main content width on large screens */
-  max-width: 1440px;
 }
-.card {
+.qr-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 24px; /* Adds space between items */
+
   width: 100%;
   max-width: 330px;
   padding: 1rem;
   padding-bottom: 2rem;
+
   text-align: center;
   background-color: var(--clr-bg-card);
   border-radius: 12px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
-.card__image {
+.qr-card__image {
   display: block;
   max-width: 100%;
   border-radius: 12px;
 }
-.card__title {
+.qr-card__title {
   max-width: 18ch;
   font-size: 1.4rem;
   font-weight: bold;
-  color: var(--clr-heading);
+  color: var(--clr-card-title);
 }
-.card__text {
+.qr-card__text {
   max-width: 25ch;
   font-size: 0.9rem;
   line-height: 1.5;
+  color: var(--clr-card-text);
 }
 .footer {
-  width: 100%;
   padding: 1rem;
 }
 .footer__attribution {
@@ -77,16 +87,17 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: var(--clr-text);
+  color: var(--clr-attribution-link);
 }
 .footer__attribution a {
-  color: var(--clr-link);
+  color: var(--clr-attribution-link);
   transition: color 0.1s ease;
 }
 .footer__attribution a:hover,
 .footer__attribution a:focus {
-  color: var(--clr-link-hover);
+  color: var(--clr-attribution-link-hover);
 }
+/* Utilities */
 .sr-only {
   /* Visually hides element but keeps it accesible for screen readers */
   position: absolute;
