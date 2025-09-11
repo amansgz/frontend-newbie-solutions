@@ -1,29 +1,24 @@
-# 👩‍💻 Four Card Feature Section
+# Four Card Feature Section
 
-## The challenge
+This is a solution to the Four Card Feature Section challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-The challenge is to build out this feature section and get it looking as close to the design as possible.
+![Design preview design](./assets/desktop-design.jpg)
 
-## Built with
+## Technologies Used
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS Custom Properties
+- BEM methodology
 - Flexbox
-- Grid Layout
 - Mobile-first workflow
 
-<div>
-  <h3>
-    <a href= "https://amansgz.github.io/css-grid-four-cards-section/">
-      Live site
-    </a>
-    <span> | </span>
-    <a href= "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK">
-      Challenge
-    </a>
-  </h3>
-</div>
+## Links
 
-![Design preview for the Four Card Feature Section challenge](./styles/images/preview.png)
+- [Live Site]()
 
-This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a>
+## Credits and Acknowledgements
+
+This project was built as a solution to a design challenge from Frontend Mentor.
+
+- **Design:** Frontend Mentor
+- **Coded by:** @amansgz

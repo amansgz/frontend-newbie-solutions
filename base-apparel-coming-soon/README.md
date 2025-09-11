@@ -1,4 +1,8 @@
-# 👩‍💻 Base Apparel Coming Soon Page
+# Base Apparel Coming Soon
+
+This is a solution to the Base Apparel Coming Soon challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+![Design preview design](./assets/desktop-design.jpg)
 
 ## The challenge
 
@@ -12,25 +16,21 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-## Built with
+## Technologies Used
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS Custom Properties
+- BEM methodology
 - Flexbox
 - Mobile-first workflow
 
-<div>
-  <h3>
-    <a href= "https://amansgz.github.io/css-base-apparel-coming-soon/">
-      Live site
-    </a>
-    <span> | </span>
-    <a href= "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0">
-      Challenge
-    </a>
-  </h3>
-</div>
+## Links
 
-![Design preview for the Base Apparel Coming Soon Page coding challenge](./styles/images/preview.png)
+- [Live Site]()
 
-This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a>
+## Credits and Acknowledgements
+
+This project was built as a solution to a design challenge from Frontend Mentor.
+
+- **Design:** Frontend Mentor
+- **Coded by:** @amansgz

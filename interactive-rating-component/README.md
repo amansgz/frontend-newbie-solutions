@@ -1,4 +1,8 @@
-# 👩‍💻 Interactive rating component
+# Interactive Rating Component
+
+This is a solution to the Interactive Rating Component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+![Design preview design](./assets/desktop-design.jpg)
 
 ## The challenge
 
@@ -11,26 +15,21 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-## Built with
+## Technologies Used
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS Custom Properties
+- BEM methodology
 - Flexbox
 - Mobile-first workflow
-- JavaScript
 
-<div>
-  <h3>
-    <a href= "https://amansgz.github.io/css-interactive-rating-component/">
-      Live site
-    </a>
-    <span> | </span>
-    <a href= "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">
-      Challenge
-    </a>
-  </h3>
-</div>
+## Links
 
-![Design preview for the Interactive rating component coding challenge](./css/assets/preview.png)
+- [Live Site]()
 
-This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a>
+## Credits and Acknowledgements
+
+This project was built as a solution to a design challenge from Frontend Mentor.
+
+- **Design:** Frontend Mentor
+- **Coded by:** @amansgz
