@@ -19,19 +19,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
+    <main class="main-container">
       <h1 class="sr-only">Profile card component</h1>
       <article class="profile-card">
         <header class="profile-card__header"></header>
 
         <div class="profile-card__body">
+          <!-- User Avatar -->
           <img
             class="profile-card__photo"
             src="./assets/image-victor.jpg"
             alt="Victor Crest"
           />
-
-          <div class="profile-card__details">
+          <!-- User Info -->
+          <div class="profile-card__info">
             <h2 class="profile-card__name">Victor Crest</h2>
             <span class="profile-card__age">26</span>
           </div>
@@ -39,15 +40,22 @@
         </div>
 
         <footer class="profile-card__footer">
-          <ul class="profile-card__stats-list">
+          <!-- User Social Media Stats -->
+          <ul class="profile-card__stats">
             <li>
-              <p>80K <span>Followers</span></p>
+              <p class="profile-card__number-stats">
+                80K <span class="profile-card__label-stats">Followers</span>
+              </p>
             </li>
             <li>
-              <p>803K <span>Likes</span></p>
+              <p class="profile-card__number-stats">
+                803K <span class="profile-card__label-stats">Likes</span>
+              </p>
             </li>
             <li>
-              <p>1.4K <span>Photos</span></p>
+              <p class="profile-card__number-stats">
+                1.4K <span class="profile-card__label-stats">Photos</span>
+              </p>
             </li>
           </ul>
         </footer>
