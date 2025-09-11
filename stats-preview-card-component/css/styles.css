@@ -1,29 +1,15 @@
 :root {
   /* Base colors: Main project palette*/
-  /* Primary colors */
-  --navy-950: hsl(233, 47%, 7%);
-  --blue-950: hsl(244, 37%, 16%);
-  --purple-500: hsl(277, 64%, 61%);
-  --light-violet: hsl(277, 92%, 40%);
-  /* Neutral */
-  --white: hsl(0, 0%, 100%);
-  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
-  --light-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --color-primary-navy: hsl(233, 47%, 7%);
+  --color-primary-blue: hsl(244, 37%, 16%);
+  --color-primary-purple: hsl(277, 64%, 61%);
 
-  /* Purpose colors: Used for specific elements */
-  --body-bg: var(--navy-950);
-  --card-bg: var(--blue-950);
-  --accent-color: var(--purple-500);
-  --card-title-color: var(--white);
-  --card-text-color: var(--slightly-transparent-white);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-light-white: hsla(0, 0%, 100%, 0.6);
+  --color-neutral-slightly-white: hsla(0, 0%, 100%, 0.75);
+
   --card-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
-
-  --stats-label-color: var(--light-transparent-white);
-  --stats-number-color: var(--white);
-
-  --footer-attribution-text-color: var(--light-transparent-white);
-  --footer-attribution-link-hover-color: var(--purple-500);
-
+  --light-violet: hsl(277, 92%, 40%);
   --card-image-filter: var(--light-violet);
 
   /* Fonts */
@@ -31,10 +17,10 @@
   --ff-heading: "Lexend Deca", sans-serif;
 
   --font-size-body: 15px;
-  --font-size-heading: 1.7rem;
-  --font-size-text: 1.1rem;
+  --font-size-heading: 1.5rem;
+  --font-size-text: 0.9rem;
   --font-size-stats-number: 1.1rem;
-  --font-size-stats-label: 0.9rem;
+  --font-size-stats-label: 0.8rem;
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
@@ -54,21 +40,21 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: var(--ff-body);
-  background-color: var(--body-bg);
+  background-color: var(--color-primary-navy);
 }
-main {
+.main-container {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .card {
   width: 100%;
   max-width: 375px;
 
-  background-color: var(--card-bg);
+  background-color: var(--color-primary-blue);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
   overflow: hidden;
@@ -84,34 +70,37 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  padding: 3rem 0;
+  gap: 20px;
+  padding: 2.5rem 0;
   text-align: center;
 }
 .card__title {
   width: 15ch;
   font-size: var(--font-size-heading);
-  color: var(--card-title-color);
+  color: var(--color-neutral-white);
 }
 .card__title strong {
-  color: var(--accent-color);
+  color: var(--color-primary-purple);
 }
 .card__text {
-  width: 27ch;
+  width: 29ch;
   font-size: var(--font-size-text);
   line-height: 1.6;
-  color: var(--card-text-color);
+  color: var(--color-neutral-slightly-white);
 }
 .card__stats {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 1rem 0;
+}
+.card__stats-number {
   font-size: var(--font-size-stats-number);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--stats-number-color);
+  color: var(--color-neutral-white);
 }
 .card__stats-label {
   display: block;
@@ -119,7 +108,7 @@ main {
   font-size: var(--font-size-stats-label);
   font-weight: 400;
   padding-top: 5px;
-  color: var(--stats-label-color);
+  color: var(--color-neutral-light-white);
 }
 
 .footer {
@@ -127,35 +116,36 @@ main {
   text-align: center;
 }
 .footer__attribution {
-  color: var(--footer-attribution-text-color);
+  color: var(--color-neutral-light-white);
   text-align: center;
 }
 .footer__attribution a {
-  color: var(--footer-attribution-text-color);
+  color: var(--color-neutral-light-white);
   text-decoration: none;
   transition: color 0.1s ease;
 }
 .footer__attribution a:hover,
 .footer__attribution a:focus {
-  color: var(--footer-attribution-link-hover-color);
+  color: var(--color-primary-purple);
 }
 
 @media (min-width: 1024px) {
   .card {
     display: flex;
     flex-direction: row-reverse;
-    gap: 2rem;
+    gap: 4rem;
     width: 100%;
-    max-width: 980px;
+    max-width: 800px;
   }
   .card__body {
     align-items: flex-start;
-    gap: 20px;
+    gap: 18px;
     padding: 0;
+    padding-left: 3rem;
     text-align: left;
   }
   .card__title {
-    width: 18ch;
+    width: 20ch;
   }
   .card__text {
     width: 40ch;
@@ -163,6 +153,6 @@ main {
   .card__stats {
     flex-direction: row;
     gap: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 }
