@@ -6,17 +6,25 @@
   --white: hsl(0, 0%, 100%);
 
   /* Purpose colors: Used for specific elements */
-  --clr-bg-body: var(--slate-300);
+  --main-bg: var(--slate-300);
+  --card-bg: var(--white);
+  --card-title-color: var(--slate-900);
+  --card-text-color: var(--slate-500);
+  --card-shadow-color: 2px 2px 8px rgba(0, 0, 0, 0.15);
 
-  --clr-bg-card: var(--white);
-  --clr-card-title: var(--slate-900);
-  --clr-card-text: var(--slate-500);
-
-  --clr-attribution-link: var(--slate-500);
-  --clr-attribution-link-hover: var(--slate-900);
+  --footer-bg: var(--slate-300);
+  --footer-text-color: var(--slate-500);
+  --footer-attribution-link-hover-color: var(--slate-900);
 
   /* Fonts */
-  --ff-primary: "Outfit", sans-serif;
+  --font-family-body: "Outfit", sans-serif;
+
+  --font-size-base: 15px;
+  --font-size-h2: 1.35rem;
+  --font-size-text: 0.9rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 }
 *:before,
 *:after,
@@ -31,18 +39,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  font-family: var(--ff-primary);
-  background-color: var(--clr-bg-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
 }
-.main-content {
-  /* Pushes footer to the bottom */
-  flex-grow: 1;
+.main-container {
+  flex-grow: 1; /* Pushes footer to the bottom */
 
   /* Center the card horizontally and vertically*/
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+
+  padding: 0.5rem;
+  background-color: var(--main-bg);
 }
 .qr-card {
   display: flex;
@@ -57,9 +66,9 @@ body {
   padding-bottom: 2rem;
 
   text-align: center;
-  background-color: var(--clr-bg-card);
+  background-color: var(--card-bg);
   border-radius: 12px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--card-shadow-color);
 }
 .qr-card__image {
   display: block;
@@ -68,33 +77,35 @@ body {
 }
 .qr-card__title {
   width: 20ch;
-  font-size: 1.35rem;
-  font-weight: bold;
-  color: var(--clr-card-title);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  color: var(--card-title-color);
 }
 .qr-card__text {
   width: 27ch;
-  font-size: 0.9rem;
+  font-size: var(--font-size-text);
   line-height: 1.5;
-  color: var(--clr-card-text);
+  color: var(--card-text-color);
 }
 .footer {
   padding: 1rem;
+  background-color: var(--footer-bg);
 }
 .footer__attribution {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: var(--clr-attribution-link);
+  color: var(--footer-text-color);
 }
-.footer__attribution a {
-  color: var(--clr-attribution-link);
+.footer__attribution-link {
+  text-decoration: none;
+  color: var(--footer-text-color);
   transition: color 0.1s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus {
-  color: var(--clr-attribution-link-hover);
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
+  color: var(--footer-attribution-link-hover-color);
 }
 /* Utilities */
 .sr-only {
