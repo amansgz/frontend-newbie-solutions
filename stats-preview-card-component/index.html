@@ -25,12 +25,12 @@
       <article class="card">
         <picture class="card__image">
           <source
-            srcset="./styles/images/image-header-desktop.jpg"
+            srcset="./assets/image-header-desktop.jpg"
             media="(min-width: 1200px)"
           />
           <img
-            src="./styles/images/image-header-mobile.jpg"
-            alt="Data analitycs team  working at office"
+            src="./assets/image-header-mobile.jpg"
+            alt="Data analitycs team working at office"
           />
         </picture>
 
@@ -42,32 +42,33 @@
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <div class="stats__container">
-            <p class="stats__item">
-              10k+
-              <span> companies </span>
-            </p>
-            <p class="stats__item">
-              314
-              <span> templates </span>
-            </p>
-            <p class="stats__item">
-              12m+
-              <span> queries </span>
-            </p>
-          </div>
+          <ul class="card__stats">
+            <li class="card__stats-number">
+              10k+ <span class="card__stats-label"> companies </span>
+            </li>
+            <li class="card__stats-number">
+              314 <span class="card__stats-label"> templates </span>
+            </li>
+            <li class="card__stats-number">
+              12m+ <span class="card__stats-label"> queries </span>
+            </li>
+          </ul>
         </div>
       </article>
     </main>
 
     <footer class="footer">
       <small class="footer__attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor </a
-        ><br />
-        Coded by
-        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+        <div>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+        </div>
+        <div>
+          Coded by
+          <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+        </div>
       </small>
     </footer>
   </body>

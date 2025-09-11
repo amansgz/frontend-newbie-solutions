@@ -1,32 +1,24 @@
-# 👩‍💻 Stats preview card component
+# Stats Preview Card Component
 
-## The challenge
+This is a solution to the Stats Preview Card Component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-The challenge is to build out this card component and get it looking as close to the design as possible.
+![Design desktop preview](./assets/desktop-design.jpg)
 
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-
-## Built with
+## Technologies Used
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS Custom Properties
+- BEM methodology
 - Flexbox
 - Mobile-first workflow
 
-<div>
-  <h3>
-    <a href= "https://amansgz.github.io/css-stats-preview-card-component/">
-      Live site
-    </a>
-    <span> | </span>
-    <a href= "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">
-      Challenge
-    </a>
-  </h3>
-</div>
+## Links
 
-![Design preview for the Stats preview card component coding challenge](./styles/images/preview.png)
+- [Live Site]()
 
-This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a>
+## Credits and Acknowledgements
+
+This project was built as a solution to a design challenge from Frontend Mentor.
+
+- **Design:** Frontend Mentor
+- **Coded by:** @amansgz
