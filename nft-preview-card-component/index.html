@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./assets/icons/favicon-32x32.png"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,9 +21,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
+    <main class="main-container">
       <article class="card">
-        <div class="card__image"></div>
+        <a href="#" class="card__image-link">
+          <img
+            class="card__image"
+            src="./assets/images/image-equilibrium.jpg"
+            alt=""
+          />
+          <div class="overlay-with-bg-image"></div>
+        </a>
         <div class="card__content">
           <h1>
             <a href="#" class="card__title"> Equilibrium #3429 </a>
@@ -31,31 +38,30 @@
           <p class="card__text">
             Our Equilibrium collection promotes balance and calm.
           </p>
-        </div>
 
-        <div class="card__current__states">
-          <div class="state__ethereum">
-            <img src="./styles/images/icon-ethereum.svg" alt="icon ethereum" />
-            <span> 0.041 ETH </span>
+          <div class="card__states">
+            <div class="card__state-ethereum">
+              <img src="./assets/icons/icon-ethereum.svg" alt="icon ethereum" />
+              <span> 0.041 ETH </span>
+            </div>
+            <div class="card__state-days-left">
+              <img src="./assets/icons/icon-clock.svg" alt="icon clock" />
+              <span> 3 days left </span>
+            </div>
           </div>
-          <div class="state__days__left">
-            <img src="./styles/images/icon-clock.svg" alt="icon clock" />
-            <span> 3 days left </span>
-          </div>
-        </div>
 
-        <footer class="card__footer">
-          <div class="card__footer__attribution">
+          <div class="card__attribution">
             <img
-              src="./styles/images/image-avatar.png"
+              class="card__attribution-avatar"
+              src="./assets/images/image-avatar.png"
               alt="avatar Jules Wyvern"
             />
-            <p>
+            <p class="card__attribution-text">
               Creation of
-              <a href="#"> Jules Wyvern </a>
+              <a class="card__attribution-link" href="#"> Jules Wyvern </a>
             </p>
           </div>
-        </footer>
+        </div>
       </article>
     </main>
 

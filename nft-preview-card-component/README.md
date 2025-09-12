@@ -1,33 +1,24 @@
-# 👩‍💻 NFT preview card component
+# NFT Preview Card Component
 
-## The challenge
+This is a solution to the NFT Preview Card Component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-The challenge is to build out this preview card component and get it looking as close to the design as possible.
+![Desktop preview design](./assets/images/desktop-design.jpg)
 
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-
-## Built with
+## Technologies Used
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS Custom Properties
+- BEM methodology
 - Flexbox
 - Mobile-first workflow
 
-<div>
-  <h3>
-    <a href= "https://amansgz.github.io/css-nft-preview-card/">
-      Live site
-    </a>
-    <span> | </span>
-    <a href= "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">
-      Challenge
-    </a>
-  </h3>
-</div>
+## Links
 
-![preview screenshot](./styles/images/preview.png)
+- [Live Site]()
 
-This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a>
+## Credits and Acknowledgements
+
+This project was built as a solution to a design challenge from Frontend Mentor.
+
+- **Design:** Frontend Mentor
+- **Coded by:** @amansgz
