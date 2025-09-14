@@ -9,11 +9,10 @@
 
   /* Fonts */
   --font-family-body: "Lexend Deca", sans-serif;
+  --font-family-heading: "Big Shoulders", sans-serif;
 
-  --font-size-body: 15px;
-
-  --font-size-heading: 1.2rem;
-  --font-size-text: 0.9rem;
+  --font-size-heading: clamp(1.2rem, 4vw, 1.7rem);
+  --font-size-text: clamp(0.8rem, 2.5vw, 0.9rem);
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
@@ -27,7 +26,7 @@
   margin: 0;
 }
 html {
-  font-size: var(--font-size-body);
+  font-size: 15px;
 }
 body {
   display: flex;
@@ -36,47 +35,28 @@ body {
   font-family: var(--font-family-body);
   background-color: var(--color-neutral-gray);
 }
-/* Utilities */
-.sr-only {
-  /* Visually hides element but keeps it accesible for screen readers */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
 main {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 /* General style cards */
 .card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 100%;
-  max-width: 250px;
-  padding: 2.5rem;
+  gap: 25px;
+
+  min-width: 240px;
+  padding: 2rem;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-}
-.card__description {
-  width: 25ch;
-  font-size: var(--font-size-text);
-  font-weight: var(--font-weight-regular);
-  line-height: 1.7;
-  color: var(--color-neutral-white);
 }
 
 .card--sedans {
@@ -84,11 +64,9 @@ main {
   border-top-right-radius: 8px;
   background-color: var(--color-primary-gold);
 }
-
 .card--suvs {
   background-color: var(--color-primary-cyan);
 }
-
 .card--luxury {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -99,20 +77,28 @@ main {
   width: 60px;
   height: auto;
 }
-
 .card__title {
+  font-family: var(--font-family-heading);
   font-size: var(--font-size-heading);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: var(--color-neutral-gray);
+}
+.card__description {
+  width: 23ch;
+  max-width: 100%;
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.7;
+  color: var(--color-neutral-white);
 }
 
 .card__button {
   text-decoration: none;
-  display: inline-block;
-  width: 130px;
-  padding: 0.7rem 0;
-  font-size: var(--font-size-text);
+  align-self: flex-start;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.9rem;
   text-align: center;
   border: 2px solid transparent;
   border-radius: 24px;
@@ -126,7 +112,7 @@ main {
   color: var(--color-primary-cyan);
 }
 .card__button--luxury {
-  color: var(--card-luxury-button-text-color);
+  color: var(--color-primary-green);
 }
 
 /* Hover states: each button changes its background to primary color card and text button to neutral white color */
@@ -156,23 +142,32 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: var(--color-primary-green);
+  color: var(--color-primary-cyan);
 }
 .footer__attribution a {
   text-decoration: none;
-  color: var(--color-primary-green);
-  transition: color 0.1s ease;
+  color: var(--color-primary-cyan);
+  transition: color 0.3s ease;
 }
 .footer__attribution a:hover,
 .footer__attribution a:focus {
-  color: var(--color-primary-cyan);
+  color: var(--color-primary-green);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .cards {
     flex-direction: row;
   }
-
+  .card {
+    gap: 30px;
+  }
+  .card__description {
+    margin-bottom: 3rem;
+  }
+  .card__button {
+    padding: 0.7rem 1.5rem;
+  }
   .card--sedans {
     border-top-right-radius: 0;
     border-top-left-radius: 8px;

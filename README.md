@@ -1,5 +1,7 @@
 # Frontend Mentor Newbie Solutions
 
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+
 - QR code component
 
   [Live Site](https://qr-card-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/qr-code-component)
@@ -20,7 +22,7 @@
   </div>
 
 - Product Preview Card Component
-  [Live Site]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/product-preview-card-component)
+  [Live Site](https://product-card-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/product-preview-card-component)
   <div>
     <img src="./product-preview-card-component/assets/desktop-design.jpg" alt="Product Preview Card component desktop design" width="230">
   </div>
@@ -44,7 +46,33 @@
   </div>
 
 - Stats Preview Card Component
-  [Live Site]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
+  [Live Site](https://stats-preview-component.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
   <div>
     <img src="./stats-preview-card-component/assets/desktop-design.jpg" alt="Stats Preview Card Component desktop design" width="230">
   </div>
+
+- NFT Preview Card Component
+  [Live Site](http://nft-card-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/nft-preview-card-component)
+  <div>
+    <img src="./nft-preview-card-component/assets/images/desktop-design.jpg" alt="NFT Preview Card Component desktop design" width="230">
+  </div>
+
+- 3 Column Preview Card
+  [Live Site](https://3column-cards-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/3-column-preview-card)
+  <div>
+    <img src="./3-column-preview-card/design/preview.jpg" alt="3 Column Preview Card desktop design" width="230">
+  </div>
+
+  - Article Preview Component
+
+  - Base Apparel Coming Soon Page
+
+  - FAQ Accordion Card
+
+  - Four Card Feature Section
+
+  - Interactive Rating Component
+
+  - Intro Component with Form
+
+  - Results Summary Component

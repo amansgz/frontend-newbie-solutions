@@ -17,53 +17,87 @@
   </head>
   <body>
     <header class="header">
-      <figure class="header__logo">
-        <img src="./styles/images/logo.svg" alt="logo" />
-      </figure>
+      <a href="#">
+        <img
+          class="header__logo"
+          src="./assets/images/logo.svg"
+          alt="Base Apparel logo"
+        />
+      </a>
     </header>
 
-    <main>
-      <section class="hero__section">
-        <div class="grid__container">
-          <picture class="hero__image">
-            <source
-              srcset="./styles/images/hero-desktop.jpg"
-              media="(min-width: 768px)"
-            />
-            <img
-              class="main-img"
-              src="./styles/images/hero-mobile.jpg"
-              alt="Base Apparel model"
-            />
-          </picture>
-          <div class="content">
-            <h1 class="content__title">
-              <span> We're </span>
-              coming <br />
-              soon
-            </h1>
-            <p class="content__text">
-              Hello fellow shoppers! We're currently building our new fashion
-              store. Add your email below to stay up-to-date with announcements
-              and our launch deals.
-            </p>
-            <form>
-              <div class="input__container">
+    <main class="main-container">
+      <section class="hero">
+        <picture>
+          <source
+            srcset="./assets/images/hero-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero__image"
+            src="./assets/images/hero-mobile.jpg"
+            alt="Base Apparel model"
+          />
+        </picture>
+
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="emphasis"> We're </span>
+            coming <br />
+            soon
+          </h1>
+          <p class="hero__description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form class="subscribe-form" id="email-form">
+            <div class="subscribe-form__imput-group">
+              <div class="input-icon-wrapper">
+                <label class="sr-only" for="email" class="sr-only"
+                  >Email address</label
+                >
                 <input
-                  class="input__email"
+                  class="subscribe-form__input"
                   type="email"
                   name="email"
-                  id="email"
+                  id="email-input"
                   placeholder="Email Address"
                 />
-                <label class="error__icon" for="email"> </label>
-                <button class="btn__submit" aria-label="submit">
-                  <img src="./styles/images/icon-arrow.svg" alt="" />
-                </button>
+                <img
+                  class="subscribe-form__error-icon hidden"
+                  id="error-icon"
+                  src="./assets/icons/icon-error.svg"
+                />
               </div>
-              <p class="error__message">Please provide a valid email</p>
-            </form>
-          </div>
+              <p
+                class="subscribe-form__error-message"
+                id="error-text"
+                aria-label="polite"
+              >
+                Please provide a valid email
+              </p>
+            </div>
+            <button
+              type="submit"
+              class="subscribe-form__button"
+              aria-label="submit"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
+            </button>
+          </form>
         </div>
       </section>
     </main>

@@ -3,26 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3 Column Preview Card Component</title>
+    <title>Frontend Mentor | 3 Column Preview Card Component</title>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700&family=Lexend+Deca&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
+    <main aria-label="3 column preview card">
       <article class="cards">
-        <h1 class="sr-only">3 column preview card</h1>
         <section class="card card--sedans">
           <img class="card__icon" src="./assets/icon-sedans.svg" alt="" />
           <h2 class="card__title">Sedans</h2>
@@ -32,6 +31,7 @@
           </p>
           <a class="card__button card__button--sedans" href="#">Learn More</a>
         </section>
+
         <section class="card card--suvs">
           <img class="card__icon" src="./assets/icon-suvs.svg" alt="" />
           <h2 class="card__title">SUVs</h2>
@@ -41,6 +41,7 @@
           </p>
           <a class="card__button card__button--suvs" href="#">Learn More</a>
         </section>
+
         <section class="card card--luxury">
           <img class="card__icon" src="./assets/icon-luxury.svg" alt="" />
           <h2 class="card__title">Luxury</h2>
@@ -53,18 +54,27 @@
       </article>
     </main>
     <footer class="footer">
-      <small class="footer__attribution">
-        <div>
+      <div class="footer__attribution">
+        <p>
           Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Frontend Mentor
           </a>
-        </div>
-        <div>
+        </p>
+        <p>
           Coded by
-          <a href="https://github.com/amansgz" target="_blank">@amansgz</a>
-        </div>
-      </small>
+          <a
+            href="https://github.com/amansgz"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@amansgz</a
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>

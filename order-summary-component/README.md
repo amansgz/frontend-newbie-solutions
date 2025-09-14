@@ -1,10 +1,35 @@
-# Order Summary Card Component
+# Order summary card component solution
 
-This is a solution to the Order Summary Card Component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-![Design preview for the Order summary card component](./assets/desktop-design.jpg)
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-## Technologies Used
+## Table of contents
+
+- [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Links](#links)
+  - [Screenshots](#screenshots)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## The challenge
+
+Users should be able to:
+
+- See hover states for interactive elements
+
+ <div>
+    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/active-states.jpg" alt=" active states" width="768">
+  </div>
+
+## My Process
+
+### Built with
 
 - Semantic HTML5 markup
 - CSS Custom Properties
@@ -12,19 +37,65 @@ This is a solution to the Order Summary Card Component challenge on Frontend Men
 - Flexbox
 - Mobile-first workflow
 
-## Features
+### Features
 
 - **Responsive Layout:** The component adapts to different screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
 - **BEM methodology:** Implementing a more structuring naming convention for CSS classes to keep the codebase clean and scalable.
 - **Clean and Accesible Code:** The project uses semantic HTML and includes a screen reader-only heading to improve accessibility and provide proper context for assistive technologies.
 
-## Links
+### Links
 
-- [Live Site](https://order-summary-solution-css.netlify.app)
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [](https://order-summary-solution-css.netlify.app)
 
-## Credits and Acknowledgements
+### Screenshots
 
-This project was built as a solution to a design challenge from Frontend Mentor.
+<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
+  <div>
+    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/mobile-screenshot.png" alt="Mobile screenshot" width="320">
+  </div>
+  <div>
+    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/desktop-screenshot.png" alt="Desktop screenshot" width="768">
+  </div>
+</div>
 
-- **Design:** Frontend Mentor
-- **Coded by:** @amansgz
+### What I learned
+
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
+```
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+
+## Author
+
+- Website - [Add your name here](https://www.your-site.com)
+- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+- Github - [@amansgz](https://www.github.com/amansgz)
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
