@@ -12,7 +12,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
   - [Screenshots](#screenshots)
   - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## The challenge
 
@@ -36,10 +39,17 @@ The challenge is to build out this QR code component and get it looking as close
 - Flexbox
 - Mobile-first workflow
 
+### Features
+
+- **Responsive Layout:** The component adapts to different screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
+- **Perfect Centering:** The QR code card centered both horizontally and vertically on the page using modern Flexbox techniques.
+- **Clean and Accesible Code:** The project uses semantic HTML and includes a screen reader-only heading to improve accessibility and provide proper context for assistive technologies.
+
 ### Links
 
+- [Live Site](https://qr-card-solution.netlify.app)
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [QR card solution](https://qr-card-solution.netlify.app)
+- Live Site URL: [https://qr-card-solution.netlify.app](https://qr-card-solution.netlify.app)
 
 ### Screenshots
 
@@ -54,60 +64,43 @@ The challenge is to build out this QR code component and get it looking as close
 
 ### What I learned
 
-- **Responsive Layout:** The component adapts to different screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
-- **Perfect Centering:** The QR code card centered both horizontally and vertically on the page using modern Flexbox techniques.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-  ```css
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  main {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  ```
+To see how you can add code snippets, see below:
 
-- **CSS Variables:** I implemented custom CSS properties, also known as CSS variables, to store reusable values. By defining variables in the `:root` pseudo-class, I can use these values throughout the stylesheet. This approach makes it easy to manage a project's color palette, typography, and spacing, drastically simplifying future updates and ensuring design consistency.
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-  ```css
-  /* Base colors: Main project palette*/
-  --slate-300: hsl(212, 45%, 89%);
-  --slate-500: hsl(216, 15%, 48%);
-  --slate-900: hsl(218, 44%, 22%);
-  --white: hsl(0, 0%, 100%);
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
 
-  /* Purpose colors: Used for specific elements */
-  --main-bg: var(--slate-300);
-  --card-bg: var(--white);
-  --card-title-color: var(--slate-900);
-  ```
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
+```
 
-- **Clean and Accesible Code:** The project uses semantic HTML and includes a screen reader-only heading to improve accessibility and provide proper context for assistive technologies.
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-  ```css
-  /* Utilities */
-  .sr-only {
-    /* 
-    Visually hides element but keeps it 
-    accesible for screen readers 
-    */
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-  ```
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
+- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://www.github.com/amansgz)
+
+## Acknowledgments
+
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.

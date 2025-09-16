@@ -18,9 +18,11 @@
 
   /* Fonts */
   --font-family-body: "Outfit", sans-serif;
+
   --font-size-base: 15px;
-  --font-size-h2: clamp(1.5rem, 2vw, 1.5rem);
-  --font-size-text: clamp(1rem, 1.5vw, 1.1rem);
+  --font-size-h2: 1.35rem;
+  --font-size-text: 0.9rem;
+
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -32,15 +34,13 @@
   padding: 0;
 }
 
-html {
-  font-size: var(--font-size-base);
-}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
   font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
 }
 .main-container {
   flex-grow: 1; /* Pushes footer to the bottom */
@@ -54,9 +54,18 @@ body {
   background-color: var(--main-bg);
 }
 .qr-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px; /* Adds space between items */
+
   width: 100%;
   max-width: 330px;
   padding: 1rem;
+  padding-bottom: 2rem;
+
+  text-align: center;
   background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: var(--card-shadow-color);
@@ -66,22 +75,14 @@ body {
   max-width: 100%;
   border-radius: 12px;
 }
-.qr-card__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px; /* Adds space between items */
-  padding: 1rem;
-  text-align: center;
-}
 .qr-card__title {
-  width: 19ch;
+  width: 20ch;
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
   color: var(--card-title-color);
 }
 .qr-card__text {
-  width: 26ch;
+  width: 27ch;
   font-size: var(--font-size-text);
   line-height: 1.5;
   color: var(--card-text-color);
@@ -90,12 +91,11 @@ body {
   padding: 1rem;
   background-color: var(--footer-bg);
 }
-.footer__attribution-container {
+.footer__attribution {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  font-size: 0.9rem;
+  gap: 5px;
   color: var(--footer-text-color);
 }
 .footer__attribution-link {
