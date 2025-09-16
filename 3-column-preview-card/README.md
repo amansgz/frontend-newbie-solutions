@@ -73,56 +73,57 @@ Users should be able to:
 ### What I learned
 
 - **BEM (Block, Element, Modifier):** This is a naming methodology for CSS classes that helps developers write more maintainable and scalable code. It organizes styles intro three distinct parts:
+
   - **Block:** A standalone component (e.g. `card`, `button`).
   - **Element:** A part of the block (e.g. `card__title`, `card__icon`).
   - **Modifier:** A flag on a block or element that changes its appearance or behavior (e.g. `card--sedans`, `button--active`).
 
-This approach makes class names clear, modular, and less prone to conflicts.
+  This approach makes class names clear, modular, and less prone to conflicts.
 
-```html
-<section class="card card--sedans">
-  <img class="card__icon" src="./assets/icon-sedans.svg" alt="" />
-  <h2 class="card__title">Sedans</h2>
-  <p class="card__description">
-    Choose a sedan for its affordability and excellent fuel economy. Ideal for
-    cruising in the city or on your next road trip.
-  </p>
-  <a class="card__button card__button--sedans" href="#">Learn More</a>
-</section>
-```
+  ```html
+  <section class="card card--sedans">
+    <img class="card__icon" src="./assets/icon-sedans.svg" alt="" />
+    <h2 class="card__title">Sedans</h2>
+    <p class="card__description">
+      Choose a sedan for its affordability and excellent fuel economy. Ideal for
+      cruising in the city or on your next road trip.
+    </p>
+    <a class="card__button card__button--sedans" href="#">Learn More</a>
+  </section>
+  ```
 
-```
-Block__Element--Modifier
+  ```
+  Block__Element--Modifier
 
-article cards
-  section card card--sedans
-    card__icon
-    card__title
-    card__description
-    card__button card__button--sedans
-  section card card--suvs
-    card__icon
-    card__title
-    card__description
-    card__button card__button--suvs
-  section card card--luxury
-    card__icon
-    card__title
-    card__description
-    card__button card__button--luxury
-```
+  article cards
+    section card card--sedans
+      card__icon
+      card__title
+      card__description
+      card__button card__button--sedans
+    section card card--suvs
+      card__icon
+      card__title
+      card__description
+      card__button card__button--suvs
+    section card card--luxury
+      card__icon
+      card__title
+      card__description
+      card__button card__button--luxury
+  ```
 
 - **CSS Variables:** I implemented custom CSS properties, also known as CSS variables, to store reusable values. By defining variables in the `:root` pseudo-class (e.g., `--color-primary-cyan`), I can use these values throughout the stylesheet (`var(--color-primary-cyan)`). This approach makes it easy to manage a project's color palette, typography, and spacing, drastically simplifying future updates and ensuring design consistency.
 
-```css
-:root {
-  /* Colors */
-  --color-primary-cyan: hsl(184, 100%, 22%);
-}
-.card--suvs {
-  background-color: var(--color-primary-cyan);
-}
-```
+  ```css
+  :root {
+    /* Colors */
+    --color-primary-cyan: hsl(184, 100%, 22%);
+  }
+  .card--suvs {
+    background-color: var(--color-primary-cyan);
+  }
+  ```
 
 - **Accesibility (A11y):** I focused on creating an accesible user interface to ensure the component is usable for everyone. My key accesibility practices included:
   - **Semantic HTML:** Using meaningful tags like `<main>`, `<article>`, and `<section>` to provide a clear document structure for screen readers and other assistive technologies.
