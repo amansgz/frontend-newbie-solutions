@@ -12,10 +12,8 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   - [Links](#links)
   - [Screenshots](#screenshots)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgements](#acknowledgements)
 
 ## The challenge
 
@@ -72,41 +70,30 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- **Accesibility & Semantic HTML**
 
-To see how you can add code snippets, see below:
+  - **Visually hidden labbels:** Used `sr-only` class to hide label from sighted users while keeping them accessible for screen readers.
+  - **SVG accessibility:** Added `role="img"` and `<title>` elements to social icons for proper screen reader announcement.
+  - **Form validation:** Implemented accesible error messages that are announced to screen readers.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- **CSS Techniques**
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+  - **Social media hover effects:** Created rounded background effects using `background-color` + `border-radius` on social links instead of modifying the SVG itself.
+  - **Custom form validation:** Styled validation states with custom error messages and visual feedback.
+  - **Responsive design:** Used mobile-first approach and CSS Flexbox for layout adaptability.
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- **JavaScript Insights**
+  - **Form validation logic:** Built custom email validation with regex instead of relying solely on HTML5 validation.
+  - **Event handling:** Learned to use `submit` event on forms instead of `click` on buttons for better accessibility.
+  - **User experience:** Implemented timed success messages and button state management for better feedback.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://www.github.com/amansgz)
 
-## Acknowledgments
+## Acknowledgements
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Thanks to [Frontend Mentor](https://www.frontendmentor.io) for providing this challenging and educational project.
+
+- Thanks to [DeepSeek-V3](https://www.deepseek.com/) for the guidance and code reviews that helped me improve my accesibility practices and JavaScript validation.
