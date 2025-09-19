@@ -12,10 +12,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Links](#links)
   - [Screenshots](#screenshots)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## The challenge
 
@@ -40,12 +37,13 @@ Users should be able to:
 - CSS Custom Properties
 - BEM methodology
 - Flexbox
+- Css Grid
 - Mobile-first workflow
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [3 column-card-css](https://3column-cards-css.netlify.app)
+- Live Site URL: []()
 
 ### Screenshots
 
@@ -60,41 +58,36 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- **Card accents using pseudo element:**
+  A key learning from this challenge was implementing the distinctive card borders using CSS's `::before` pseudo-element.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card {
+  position: relative;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+.card-cyan::before {
+  background-color: var(--color-primary-cyan);
+}
+.card-red::before {
+  background-color: var(--color-primary-red);
+}
+.card-orange::before {
+  background-color: var(--color-primary-orange);
+}
+.card-blue::before {
+  background-color: var(--color-primary-blue);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://www.github.com/amansgz)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
