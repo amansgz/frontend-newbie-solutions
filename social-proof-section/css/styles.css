@@ -11,8 +11,9 @@
   --ff-body: "Spartan", sans-serif;
 
   --font-size-body: 15px;
-  --font-size-primary: 1.7rem;
-  --font-size-secondary: 0.9rem;
+
+  --font-size-primary: clamp(2rem, 2.5vw, 3rem);
+  --font-size-secondary: clamp(0.8rem, 1.5vw, 1rem);
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -25,6 +26,7 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   font-size: var(--font-size-body);
 }
@@ -42,49 +44,45 @@ body {
   background-color: var(--color-neutral-white);
 }
 
-.main-content {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Intro section with intro container*/
+.intro-section {
   padding: 1rem;
 }
 
-/* Intro section with text content and rates container*/
+/* Intro container with text content and rates */
 .intro__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
   padding: 3rem 0;
 }
 .intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--color-primary-very-dark-magenta);
 }
 .intro__title {
+  width: 11ch;
   font-size: var(--font-size-primary);
   font-weight: var(--font-weight-bold);
   line-height: 1.1;
-  margin-bottom: 2rem;
 }
 .intro__text {
-  width: 36ch;
+  width: 28ch;
   font-size: var(--font-size-secondary);
   line-height: 1.5;
 }
+
 /* Rates section with stars and text puntuation*/
 .rates-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
 }
 .rates__item {
-  padding: 1rem 0;
+  width: 100%;
+  padding: 0.7rem 0;
   text-align: center;
   background-color: var(--color-neutral-light-grayish-magenta);
   border-radius: 5px;
@@ -108,14 +106,12 @@ body {
 .testimonials__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 2rem 0;
 }
 .card {
   padding: 1.5rem;
-
   background-color: var(--color-primary-very-dark-magenta);
   color: var(--color-neutral-white);
   border-radius: 10px;
@@ -141,13 +137,14 @@ body {
   color: var(--color-primary-soft-pink);
 }
 .card__quote {
-  width: 26ch;
+  width: 24ch;
   margin-top: 1.5rem;
   font-size: var(--font-size-secondary);
   text-align: left;
   color: var(--color-neutral-light-grayish-magenta);
   line-height: 1.7;
 }
+
 /* Footer */
 .footer {
   padding: 1rem;
@@ -160,36 +157,88 @@ body {
   transition: color 0.1s ease;
 }
 .footer__attribution a:hover,
-.footer__attribution a:focus-visible {
+.footer__attribution a:focus {
   color: var(--color-primary-soft-pink);
 }
+
+/* Media queries */
 @media (min-width: 768px) {
   body {
     background-image: url(../assets/bg-patterns/bg-pattern-top-desktop.svg),
       url(../assets/bg-patterns/bg-pattern-bottom-desktop.svg);
     background-position: left top, right bottom;
   }
+  .intro-section {
+    padding: 2rem;
+  }
   .intro__container {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
   }
   .intro__content {
+    align-items: flex-start;
     text-align: left;
   }
-  .intro__text {
-    width: 45ch;
+
+  /* Puntuation Stars with comment*/
+  .rates-container {
+    align-items: flex-end;
+    max-width: 500px;
+  }
+  .rates__item {
+    display: flex;
+    gap: 30px;
+    padding: 1rem;
   }
   .rates__stars {
-    gap: 15px;
+    gap: 10px;
+    margin-bottom: 0;
   }
   .rates__text {
     text-align: left;
   }
+
   /* Testimonials cards */
   .testimonials__container {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .card {
+    max-width: 380px;
+    padding: 3rem 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .intro-section {
+    max-width: 1280px;
+    margin: auto;
+  }
+  .intro-container {
+    justify-content: space-between;
+  }
+  .intro__text {
+    width: 40ch;
+  }
+  /* Rates puntuation */
+  .rates__item:nth-child(1) {
+    margin-right: 10rem;
+  }
+  .rates__item:nth-child(2) {
+    margin-right: 5rem;
+  }
+  /* Testimonial cards */
+  .card:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .card:nth-child(3) {
+    margin-top: 4rem;
+  }
+  .card__quote {
+    width: 26ch;
   }
 }
