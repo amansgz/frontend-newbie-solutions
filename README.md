@@ -11,6 +11,7 @@
   </div>
 
 - Profile card component
+
   [Live Site](https://profile-card-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/profile-card-component)
 
   <div>
@@ -18,6 +19,7 @@
   </div>
 
 - Order Summary Component
+
   [Live Site](https://order-summary-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/order-summary-component)
 
   <div>
@@ -25,6 +27,7 @@
   </div>
 
 - Product Preview Card Component
+
   [Live Site](https://product-card-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/product-preview-card-component)
 
   <div>
@@ -32,6 +35,7 @@
   </div>
 
 - Single Price Grid Component
+
   [Live Site](https://single-price-grid-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/single-price-grid-component)
 
   <div>
@@ -39,20 +43,31 @@
   </div>
 
 - Huddle Landing Page
+
   [Live Site](https://huddle-landing-page-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/huddle-landing-page)
 
   <div>
     <img src="./huddle-landing-page/design/desktop-design.jpg" alt="Huddle landing Page desktop design" width="230">
   </div>
 
+- Social Proof Section
+
+  [Live Site](https://social-proof-section-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/social-proof-section)
+
+  <div>
+    <img src="./social-proof-section/design/desktop-design.jpg" alt="Social proof section desktop design" width="230">
+  </div>
+
 - Ping Coming Soon Page
-  [Live Site]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/ping-soming-soon-page)
+
+  [Live Site](https://ping-coming-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/ping-soming-soon-page)
 
   <div>
     <img src="./ping-coming-soon-page/design/desktop-design.jpg" alt="Ping Coming Sooon Page desktop design" width="230">
   </div>
 
 - Stats Preview Card Component
+
   [Live Site](https://stats-preview-component.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
 
   <div>
@@ -60,6 +75,7 @@
   </div>
 
 - NFT Preview Card Component
+
   [Live Site](http://nft-card-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/nft-preview-card-component)
 
   <div>
@@ -67,6 +83,7 @@
   </div>
 
 - 3 Column Preview Card
+
   [Live Site](https://3column-cards-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/3-column-preview-card)
 
   <div>
@@ -80,6 +97,12 @@
 - FAQ Accordion Card
 
 - Four Card Feature Section
+
+  [Live Site](https://four-cards-section-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/four-card-feature-section)
+
+  <div>
+    <img src="./four-card-feature-section/design/desktop-design.jpg" alt="Four card feature section desktop design" width="230">
+  </div>
 
 - Interactive Rating Component
 
