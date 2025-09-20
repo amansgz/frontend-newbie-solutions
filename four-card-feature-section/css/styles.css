@@ -83,6 +83,7 @@ body {
   max-width: 300px;
   padding: 2rem;
   margin-bottom: 1.5rem;
+  background-color: var(--color-neutral-light-gray);
   border-radius: 10px;
   box-shadow: 0 10px 30px var(--color-neutral-grayish-blue);
   overflow: hidden;
