@@ -1,18 +1,16 @@
-# Four card feature section solution
+# Four Card Feature Section
 
 This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [The challenge](#the-challenge)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Links](#links)
-  - [Screenshots](#screenshots)
-  - [What I learned](#what-i-learned)
+- [Built with](#built-with)
+- [Links](#links)
+- [What I learned](#what-i-learned)
+- [Changelog](#changelog)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## The challenge
 
@@ -20,18 +18,7 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/mobile-design.jpg" alt=" Preview Card desktop design" width="320">
-  </div>
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/desktop-design.jpg" alt=" Preview Card desktop design" width="768">
-  </div>
-</div>
-
-## My Process
-
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS Custom Properties
@@ -40,54 +27,35 @@ Users should be able to:
 - Css Grid
 - Mobile-first workflow
 
-### Links
+## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: []()
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://four-cards-section-solution.netlify.app)
+[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/css-grid-four-card-feature-section-TjkaZiu-J8)
 
-### Screenshots
-
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/mobile-screenshot.png" alt="Mobile screenshot" width="320">
-  </div>
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/desktop-screenshot.png" alt="Desktop screenshot" width="768">
-  </div>
-</div>
-
-### What I learned
+## What I learned
 
 - **Card accents using pseudo element:**
   A key learning from this challenge was implementing the distinctive card borders using CSS's `::before` pseudo-element.
 
-```css
-.card {
-  position: relative;
-}
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-}
-.card-cyan::before {
-  background-color: var(--color-primary-cyan);
-}
-.card-red::before {
-  background-color: var(--color-primary-red);
-}
-.card-orange::before {
-  background-color: var(--color-primary-orange);
-}
-.card-blue::before {
-  background-color: var(--color-primary-blue);
-}
-```
+## Changelog
+
+**September 2025 - v2.0 Release**
+
+- **CSS Optimization:** Refactored CSS with new variables names following style guide principles.
+- **Semantic HTML:** Restructured layout using `<header>` and `<section>` for better accessibility and structure.
+- **Icon Handling:** Updated icon rendering from CSS to HTML `<img>` tags.
+- **Layout Enhancements:** Improve Grid Implementation and utilized `clamp()` for responsive typography.
+
+**May 2023 - v1.0 - Initial Solution**
+
+- **First Release:** Initial solution built with HTML and CSS.
+- **Fully functional:** Completed all Frontend Mentor challenge requirements.
 
 ## Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://www.github.com/amansgz)
+
+## Acknowledgments
+
+Thanks to [Frontend Mentor](https://www.frontendmentor.io) for providing this challenge and helping developers improve their skills through realistic projects.
