@@ -1,114 +1,51 @@
-# Article preview component solution
+# 🚀 Article Preview Component
 
-This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## Table of contents
+A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
 
-- [The challenge](#the-challenge)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Links](#links)
-  - [Screenshots](#screenshots)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+![Desktop preview](./design/desktop-preview.jpg)
 
-## The challenge
+## 📋 Table of contents
 
-Your challenge is to build out this article preview component and get it looking as close to the design as possible.
+- [Overview](#-overview)
+- [Built with](#-built-with)
+- [Links](#-links)
+- [What I Learned](#-what-i-learned)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
-The only JavaScript you'll need for this challenge is to initiate the share options when someone clicks the share icon.
+## 📖 Overview
 
-Your users should be able to:
+This project is my solution to the "Article Preview Component" from Frontend Mentor.
+The challenge:
 
-- View the optimal layout for the component depending on their device's screen size
+- Build the optimal layout for the site depending on their device's screen size that closely matches the provided design.
+- See the social media share links when they click the share icon.
 
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/mobile-design.jpg" alt=" Preview Card desktop design" width="320">
-  </div>
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/desktop-design.jpg" alt=" Preview Card desktop design" width="768">
-  </div>
-</div>
+Original Challenge: [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-- See the social media share links when they click the share icon
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-    <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/mobile-active-state.jpg" alt=" Preview Card desktop design" width="768">
-    </div>
-
- <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/desktop-active-state.jpg" alt=" Preview Card desktop design" width="768">
-  </div>
-</div>
-
-## My Process
-
-### Built with
+## 🛠 Built with
 
 - Semantic HTML5 markup
 - CSS Custom Properties
 - BEM methodology
 - Flexbox
 - Mobile-first workflow
+- JavaScript
 
-### Links
+## 🔗 Links
 
-- [Live Site]()
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)]()
+[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
-### Screenshots
+## 📚 What I Learned
 
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/mobile-screenshot.png" alt="Mobile screenshot" width="320">
-  </div>
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/desktop-screenshot.png" alt="Desktop screenshot" width="768">
-  </div>
-</div>
+## 👩‍💻 Author
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://www.github.com/amansgz)
 
-## Acknowledgments
+## 🙌 Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+[Frontend Mentor](https://www.frontendmentor.io) for providing this challenge and helping developers improve their skills through realistic projects.

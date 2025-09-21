@@ -1,69 +1,51 @@
-# Social proof section solution
+# 🚀 Social Proof Section
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
 
-## Table of contents
+![Desktop preview](./design/desktop-preview.jpg)
 
-- [The challenge](#the-challenge)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Links](#links)
-  - [Screenshots](#screenshots)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
+## 📋 Table of contents
 
-## The challenge
+- [Overview](#-overview)
+- [Built with](#-built-with)
+- [Links](#-links)
+- [What I Learned](#-what-i-learned)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
-Your challenge is to build out this social proof section and get it looking as close to the design as possible.
+## 📖 Overview
 
-Users should be able to:
+This project is my solution to the "Social Proof Section" from Frontend Mentor. The goal was to build the optimal layout for the site depending on their device's screen size that closely matches the provided design.
 
-- View the optimal layout for the section depending on their device's screen size
+Original Challenge: [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
 
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/mobile-design.jpg" alt=" Preview Card desktop design" width="320">
-  </div>
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/desktop-design.jpg" alt=" Preview Card desktop design" width="768">
-  </div>
-</div>
-
-## My Process
-
-### Built with
+## 🛠 Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- BEM methodology
 - Flexbox
 - Mobile-first workflow
 - JavaScript
 
-### Links
+## 🔗 Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: []()
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://social-proof-section-css.netlify.app)
+[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
-### Screenshots
-
-<div style="display: flex; gap: 1rem; padding-bottom: 1.5rem;">
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/mobile-screenshot.png" alt="Mobile screenshot" width="320">
-  </div>
-  <div>
-    <img style="box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);" src="./design/screenshots/desktop-screenshot.png" alt="Desktop screenshot" width="768">
-  </div>
-</div>
-
-### What I learned
+## 📚 What I Learned
 
 - **Staircase effect implementation:** Using CSS `nth-child` selectors combined with `margin` to create a visually appealing staircase effect.
 - **Dynamic star rating generation:** Creating SVG star elements for all rating components. This approach allows easy scalability if different ratings were needed in the future.
 
-## Author
+## 👩‍💻 Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
 - Github - [@amansgz](https://www.github.com/amansgz)
+
+## 🙌 Acknowledgments
+
+[Frontend Mentor](https://www.frontendmentor.io) for providing amazing challenges.
