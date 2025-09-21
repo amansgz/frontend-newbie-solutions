@@ -52,7 +52,7 @@ This project was an excellent exercise in building a semantically correct and ac
 - **CSS Custom Properties:** Defined global CSS custom properties (variables) for the base colors according to the style guide. I also used specific variables for elements like the card and footer, as well as for typography (font family, sizes, and weights) to ensure consistency and easy theming.
 - **Layout & Centering:** Centered the card perfectly by applying Flexbox to both the `body` and `main` elements. This technique also naturally pushes the footer to the bottom of the viewport.
 - **Component Layout:** Used Flexbox inside the card to align its elements (image, title, text) neatly, utilizing the `gap` property for precise spacing without margins.
-- **Text Control:** Achieved optimal line length readability by setting `width` on the text content using the `ch` unit (character width).
+- **Text Control:** Achieved optimal line length readability by setting `max-width` on the text content using the `ch` unit (character width).
 - **Responsive Design:** Built the component with a **mobile-first** approach, ensuring it looks great and functions perfectly on all devices, starting from a viewport width of 320px.
 
 ## 👩‍💻 Author

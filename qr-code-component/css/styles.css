@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 24px; /* Adds space between items */
+  gap: 15px; /* Adds space between items */
 
   width: 100%;
   max-width: 330px;
@@ -76,13 +76,13 @@ body {
   border-radius: 12px;
 }
 .qr-card__title {
-  width: 20ch;
+  max-width: 18ch;
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
   color: var(--card-title-color);
 }
 .qr-card__text {
-  width: 27ch;
+  max-width: 25ch;
   font-size: var(--font-size-text);
   line-height: 1.5;
   color: var(--card-text-color);
@@ -96,6 +96,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  font-size: var(--font-size-text);
   color: var(--footer-text-color);
 }
 .footer__attribution-link {
