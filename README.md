@@ -81,6 +81,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
 
 8.  **Social Proof Section**
     Testimonial section with ratings. Challenge for alignment and layout with asymmetric elements.
+
     [Live Demo](https://social-proof-section-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/social-proof-section)
 
     <div>
