@@ -37,6 +37,14 @@ Original Challenge: [Product preview card component challenge on Frontend Mentor
 
 ## 📚 What I Learned
 
+This project was an excellent exercise in creating a responsive and accesible component. Two key takeaways from the challenge were:
+
+1. **Mastering Responsive Images with `<picture>` and `<media>`**
+   I moved beyond simple CSS-based image scaling and leveraged the HTML `<picture>` element. This allow me to serve completely different images files based on the user's viewport. By using `<source>` tags with `media` attributes, I could specify a larger, desktop-optimized image for wider screens and seamlessly switch to a more appropiate mobile-optimized image on smaller devices. This technique ensures optimal loading performance and the best visual experience across al devices, as the browser downloads only the image that matches the current size.
+
+2. **Structuring CSS with Spacing Variables**
+   To ensure visual consistency and make the stylesheet more maintainable, I implemented a system of CSS custom properties (variables) for spacing. I defined a set of variables like `--spacing-lg` to represent consistent values for margins and padding throughout the component. This approach made it incredibly easy to maintain a uniform rhythm and scale, and any future adjustments to the spacing can now made in a single place, propagating the changes globally.
+
 ## 👩‍💻 Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
