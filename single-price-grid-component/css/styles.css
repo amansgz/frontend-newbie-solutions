@@ -1,43 +1,37 @@
 :root {
-  /* Primary colors */
-  --teal-500: hsl(179, 62%, 43%);
-  --teal-400: hsl(179, 44%, 57%);
-  --green-400: hsl(71, 73%, 54%);
+  /* Colors */
+  --primary-teal: hsl(179, 62%, 43%);
+  --primary-light-teal: hsl(179, 44%, 57%);
+  --accent-color: hsl(71, 73%, 54%);
+  --accent-color-alpha: hsl(71, 73%, 54%, 0.8);
+  --neutral-light: hsl(204, 43%, 93%);
+  --neutral-dark: hsl(218, 22%, 67%);
+  --neutral-white: hsl(0, 0%, 100%);
 
-  /* Neutral colors */
-  --teal-100: hsl(204, 43%, 93%);
-  --gray-500: hsl(218, 22%, 67%);
-  --white: hsl(0, 0%, 100%);
-
-  /* Purpose colors: Used for specific elements */
-  --clr-bg-body: var(--teal-100);
-
-  /* card__intro */
-  --clr-bg-intro: var(--white);
-  --clr-intro-title: var(--teal-500);
-  --clr-intro-subtitle: var(--green-400);
-  --clr-intro-text: var(--gray-500);
-
-  /* card__subscription */
-  --clr-bg-subscription: var(--teal-500);
-  --clr-text-subscription: var(--white);
-  --clr-price-period: var(--teal-100);
-  --clr-button-subscription: var(--green-400);
-  --clr-text-button: var(--white);
-
-  /* card__features */
-  --clr-bg-features: var(--teal-400);
-  --clr-text-features: var(--white);
-
-  /* footer */
-  --clr-text-attribution: var(--gray-500);
-  --clr-hover-attribution: var(--teal-500);
+  /* Shadows */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-button: 0 4px 8px rgba(0, 0, 0, 0.15);
 
   /* Fonts */
-  --ff-primary: "Karla", sans-serif;
+  --ff-base: "Karla", sans-serif;
+
+  --fs-sm: 0.8rem;
+  --fs-xl: 2rem;
+  --fs-title: clamp(1.1rem, 2.5vw, 1.3rem);
+  --fs-subtitle: clamp(0.9rem, 2vw, 1rem);
+  --fs-text: clamp(0.8rem, 2vw, 0.9rem);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
 }
-*:before,
-*:after,
+*::before,
+*::after,
 * {
   box-sizing: border-box;
   padding: 0;
@@ -48,172 +42,151 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
-  font-family: var(--ff-primary);
-  background-color: var(--clr-bg-body);
+  font-family: var(--ff-base);
+  background-color: var(--neutral-light);
 }
 .main-container {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem;
+  padding: var(--spacing-sm);
 }
 .card {
   display: flex;
   flex-direction: column;
+  max-width: 300px;
   border-radius: 8px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
-/* Intro section card */
-.card__intro {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 1.5rem;
-  background-color: var(--clr-bg-intro);
+/* Card sections */
+.intro,
+.subscription,
+.features {
+  padding: var(--spacing-lg);
 }
-.card__title {
-  font-size: 1rem;
-  color: var(--clr-intro-title);
+.intro {
+  background-color: var(--neutral-white);
 }
-.card__subtitle {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: var(--clr-intro-subtitle);
+.subscription {
+  background-color: var(--primary-teal);
 }
-.card__text {
-  width: 34ch;
-  font-size: 0.8rem;
-  color: var(--clr-intro-text);
-  line-height: 1.7;
+.features {
+  background-color: var(--primary-light-teal);
 }
-/* Subscription section card */
-.card__subscription {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 1.5rem;
-  background-color: var(--clr-bg-subscription);
-  color: var(--clr-text-subscription);
+/* Sections titles */
+.title {
+  font-size: var(--fs-title);
+  color: var(--neutral-white);
+  margin-bottom: var(--spacing-md);
 }
-.card__subscription-title {
-  font-size: 1rem;
+.intro .title {
+  color: var(--primary-teal);
 }
-.card__subscription-text {
-  font-size: 0.9rem;
+.intro .subtitle {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-bold);
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-md);
 }
-.card__price-wrapper {
+/* Sections texts */
+.text {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-regular);
+  color: var(--neutral-white);
+  line-height: 1.6;
+}
+.intro .text {
+  max-width: 55ch;
+  color: var(--neutral-dark);
+}
+/* Prices subscription */
+.price-wrapper {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
-.card__price-amount {
-  font-size: 1.8rem;
-  font-weight: bold;
+.price-amount {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--neutral-white);
 }
-.card__price-period {
-  font-size: 0.8rem;
-  color: var(--clr-price-period);
+.price-period {
+  font-size: var(--fs-sm);
+  color: var(--neutral-light);
 }
-.card__button {
+.button {
   display: block;
-  padding: 0.7rem;
-
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--clr-button-subscription);
-  color: var(--clr-text-button);
+  padding: var(--spacing-md) var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+  border: none;
   border-radius: 4px;
-  box-shadow: 2px 10px 8px rgba(0, 0, 0, 0.15);
-  transition: opacity 0.1s ease;
-}
-.card__button:hover,
-.card__button:focus {
-  opacity: 0.8;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: var(--neutral-white);
+  background-color: var(--accent-color);
+  box-shadow: var(--shadow-button);
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-/* Features section card */
-.card__features {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 1.5rem;
-  font-weight: 300;
-  background-color: var(--clr-bg-features);
-  color: var(--clr-text-features);
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color-alpha);
 }
-.card__features-title {
-  font-size: 1rem;
-}
-.card__features-list {
+
+.features-list {
   list-style-type: none;
-  font-size: 0.8rem;
+  font-size: var(--fs-text);
   line-height: 1.5;
+  color: var(--neutral-white);
 }
 /* Footer with attribution */
 .footer {
-  padding: 1rem;
+  padding: var(--spacing-md);
   text-align: center;
-  color: var(--clr-text-attribution);
+  color: var(--primary-teal);
 }
-.footer__attribution {
+.attribution {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  font-size: var(--fs-sm);
 }
-.footer__attribution a {
+.attribution a {
   text-decoration: none;
-  color: var(--clr-text-attribution);
-  transition: color 0.1s ease;
+  color: var(--primary-teal);
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus {
-  color: var(--clr-hover-attribution);
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--neutral-dark);
 }
 
 @media screen and (min-width: 768px) {
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 280px;
-    width: 600px;
+    grid-template-rows: 200px 260px;
+    max-width: 600px;
   }
-  .card__intro {
+  .intro {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    padding: 2.5rem;
   }
-  .card__subscription {
+  .subscription {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding: 2.5rem;
   }
-  .card__features {
+  .features {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    padding: 2.5rem;
   }
-  .card__title {
-    font-size: 1.3rem;
-  }
-  .card__subtitle,
-  .card__subscription-title,
-  .card__features-title {
-    font-size: 1rem;
-  }
-  .card__text {
-    font-size: 0.9rem;
-    width: 55ch;
-  }
-  .card__button {
-    margin-top: 1rem;
-  }
-  .card__features-list {
-    font-size: 0.9rem;
-  }
-  .subscription .signup__link:hover {
-    background-color: var(--bright-light-yellow);
+  .intro,
+  .subscription,
+  .features {
+    padding: var(--spacing-xl);
   }
 }

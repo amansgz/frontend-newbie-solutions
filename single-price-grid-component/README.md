@@ -25,7 +25,6 @@ Original Challenge: [Single price grid component challenge on Frontend Mentor](h
 ## 🛠 Built with
 
 - Semantic HTML5 markup
-- BEM methodology
 - CSS Custom Properties
 - Flexbox
 - Css Grid
@@ -37,6 +36,30 @@ Original Challenge: [Single price grid component challenge on Frontend Mentor](h
 [![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
+
+### CSS Methodology Evolution
+
+This project helped me explore alternative CSS architectures beyond traditional BEM:
+
+**Previous approach (BEM):**
+
+- Multiple specific classes
+- Higher specificity requirements
+- More verbose HTML and CSS
+
+**New approach (Contextual + Utility):**
+
+- Generic classes: `.title`, `.text`
+- Styling based on parent context
+- Flatter specificity hierarchy
+- More reusable and maintainable code
+
+**Benefits observed:**
+
+- Reduced CSS file size
+- Faster development iterations
+- Easier to maintain consistency
+- More flexible component variations
 
 ## 👩‍💻 Author
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Single Price Grid Component</title>
+    <title>Frontent Mentor | Single Price Grid Component</title>
     <link
       rel="icon"
       type="image/png"
@@ -23,32 +23,38 @@
   <body>
     <main class="main-container">
       <article class="card">
-        <section class="card__intro">
-          <h1 class="card__title">Join our community</h1>
-          <p class="card__subtitle">30-day, hassle-free money back guarantee</p>
-          <p class="card__text">
+        <section class="intro" aria-label="Community introduction">
+          <header>
+            <h1 class="title">Join our community</h1>
+            <h2 class="subtitle">30-day, hassle-free money back guarantee</h2>
+          </header>
+          <p class="text">
             Gain access to our full library of tutorials along with expert code
             reviews. Perfect for any developers who are serious about honing
             their skills.
           </p>
         </section>
 
-        <section class="card__subscription">
-          <h2 class="card__subscription-title">Monthly Subscription</h2>
-          <div class="card__price-wrapper">
-            <span class="card__price-amount"> &dollar;29 </span>
-            <span class="card__price-period"> per month </span>
+        <section class="subscription" aria-label="Monthly subscription">
+          <h2 class="title">Monthly Subscription</h2>
+          <div class="price-wrapper">
+            <span class="price-amount"> &dollar;29 </span>
+            <span class="price-period"> per month </span>
           </div>
-          <p class="card__subscription-text">
-            Full access for less than &dollar;1 a day
-          </p>
-          <a href="#" class="card__button"> Sign Up </a>
+          <p class="text">Full access for less than &dollar;1 a day</p>
+          <a
+            href="#"
+            class="button"
+            aria-label="Siign up for Monthly Subscription at $29 per month"
+          >
+            Sign Up
+          </a>
         </section>
 
-        <section class="card__features">
-          <h2 class="card__features-title">Why Us</h2>
+        <section class="features" aria-label="Why Choose Us">
+          <h2 class="title">Why Us</h2>
 
-          <ul class="card__features-list">
+          <ul class="features-list">
             <li>Tutorials by industry experts</li>
             <li>Peer &amp; expert code review</li>
             <li>Coding exercises</li>
@@ -62,16 +68,26 @@
     </main>
 
     <footer class="footer">
-      <small class="footer__attribution">
+      <small class="attribution">
         <div>
           Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Frontend Mentor
           </a>
         </div>
         <div>
           Coded by
-          <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+          <a
+            href="https://github.com/amansgz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @amansgz
+          </a>
         </div>
       </small>
     </footer>
