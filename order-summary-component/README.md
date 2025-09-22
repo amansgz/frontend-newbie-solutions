@@ -44,6 +44,10 @@ Original Challenge: [Order summary card challenge on Frontend Mentor](https://ww
 
 ## 📚 What I Learned
 
+- Structured CSS with a component-based approach using BEM-like-naming.
+- Created a visually appealing card with proper spacing and shadow effects.
+- Styled interactive elements with appropiate hover and focus states.
+
 ## 👩‍💻 Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
