@@ -79,16 +79,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
       <img src="./huddle-landing-page/design/preview.jpg" alt="Huddle landing Page desktop design" width="230">
     </div>
 
-8.  **Social Proof Section**
-    Testimonial section with ratings. Challenge for alignment and layout with asymmetric elements.
-
-    [Live Demo](https://social-proof-section-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/social-proof-section)
-
-    <div>
-      <img src="./social-proof-section/design/desktop-preview.jpg" alt="Social proof section desktop design" width="230">
-    </div>
-
-9.  **Stats Preview Card Component**
+8.  **Stats Preview Card Component**
     Learn to create a responsive stats card with an image color overlay. Excellent for practicing CSS grid and color manipulation techniques.
 
     [Live Demo](https://stats-preview-component.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
@@ -97,7 +88,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
        <img src="./stats-preview-card-component/design/preview.jpg" alt="Stats Preview Card Component desktop design" width="230">
      </div>
 
-10. **NFT Preview Card Component**
+9.  **NFT Preview Card Component**
     NFT card with animated image overlay on hover and price/time details.
 
     [Live Demo](http://nft-card-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/nft-preview-card-component)
@@ -106,7 +97,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
       <img src="./nft-preview-card-component/design/preview.jpg" alt="NFT Preview Card Component desktop design" width="230">
     </div>
 
-11. **3 Column Preview Card**
+10. **3 Column Preview Card**
     Build a multi-column layout that responds beautifully to different screen sizes. Perfect for mastering CSS flexbox and responsive design.
 
     [Live Demo](https://3column-cards-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/3-column-preview-card)
@@ -118,6 +109,15 @@ Fundamental challenges focusing in layout, styling and responsive design.
 ### HTML, CSS & JavaScript Projects
 
 Interactive challenges that incorporate JavaScript for dynamic functionality.
+
+11. **Social Proof Section**
+    Testimonial section with ratings. Challenge for alignment and layout with asymmetric elements.
+
+    [Live Demo](https://social-proof-section-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/social-proof-section)
+
+    <div>
+      <img src="./social-proof-section/design/desktop-preview.jpg" alt="Social proof section desktop design" width="230">
+    </div>
 
 12. **Article Preview Component**
     Build an article preview with share tooltip that appears on click. JavaScript for show/hide functionality.
