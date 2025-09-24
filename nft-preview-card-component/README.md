@@ -37,6 +37,8 @@ Original Challenge: [NFT preview card component challenge on Frontend Mentor](ht
 
 ## 📚 What I Learned
 
+- **Overlay with background image**: learned to combine a background image with a colored overlay using CSS, creating the visual effect of a cyan tint on hover.
+
 ## 👩‍💻 Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
