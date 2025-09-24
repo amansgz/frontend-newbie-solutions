@@ -38,8 +38,9 @@ Original Challenge: [Four card feature section challenge on Frontend Mentor](htt
 
 ## 📚 What I Learned
 
-- **Card accents using pseudo element:**
-  A key learning from this challenge was implementing the distinctive card borders using CSS's `::before` pseudo-element.
+- **CSS Pseudo-elements**: Used `::before` to create stylish top borders for each card, keeping the HTML clean and semantic.
+- **Positioning techniques**: Applied absolute positioning for the decorative borders.
+- **CSS Variables**: Leveraged custom properties for consistent colors across all cards.
 
 ## 👩‍💻 Author
 
