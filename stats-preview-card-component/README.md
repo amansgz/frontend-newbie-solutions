@@ -37,6 +37,11 @@ Original Challenge: [Stats preview card component challenge on Frontend Mentor](
 
 ## 📚 What I Learned
 
+**Understanding Blend Modes**
+
+- `multiply` creates natural color overlays by multiplying the background and foreground colors.
+- The image keeps its structual properties while the pseudo-element handles the visual effect.
+
 ## 👩‍💻 Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)

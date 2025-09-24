@@ -9,8 +9,6 @@
   --color-neutral-slightly-white: hsla(0, 0%, 100%, 0.75);
 
   --card-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
-  --light-violet: hsl(277, 92%, 40%);
-  --card-image-filter: var(--light-violet);
 
   /* Fonts */
   --ff-body: "Inter", sans-serif;
@@ -53,17 +51,33 @@ body {
 .card {
   width: 100%;
   max-width: 375px;
-
   background-color: var(--color-primary-blue);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
   overflow: hidden;
 }
+.card__image {
+  position: relative;
+  background-color: var(--color-primary-purple);
+}
+.card__image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-purple);
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
 .card__image img {
   display: block;
   width: 100%;
+  height: 240px;
   object-fit: cover;
-  filter: opacity(0.4) drop-shadow(0 0 0 var(--card-image-filter));
+  object-position: center;
+  filter: grayscale(100%) contrast(120%);
 }
 .card__body {
   display: flex;
@@ -97,7 +111,7 @@ body {
 }
 .card__stats-number {
   font-size: var(--font-size-stats-number);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-neutral-white);
@@ -106,7 +120,7 @@ body {
   display: block;
   font-family: var(--ff-heading);
   font-size: var(--font-size-stats-label);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   padding-top: 5px;
   color: var(--color-neutral-light-white);
 }
@@ -117,11 +131,11 @@ body {
 }
 .footer__attribution {
   color: var(--color-neutral-light-white);
-  text-align: center;
 }
 .footer__attribution a {
   color: var(--color-neutral-light-white);
   text-decoration: none;
+  cursor: pointer;
   transition: color 0.1s ease;
 }
 .footer__attribution a:hover,
@@ -134,14 +148,19 @@ body {
     display: flex;
     flex-direction: row-reverse;
     gap: 4rem;
-    width: 100%;
     max-width: 800px;
+  }
+  .card__image {
+    flex: 0 0 48%;
+  }
+  .card__image img {
+    height: 100%;
+    min-height: 300px;
   }
   .card__body {
     align-items: flex-start;
     gap: 18px;
     padding: 0;
-    padding-left: 3rem;
     text-align: left;
   }
   .card__title {
