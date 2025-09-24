@@ -37,6 +37,8 @@ Original Challenge: [Huddle landing page with single introductory section challe
 
 ## 📚 What I Learned
 
+Building the Huddle landing page with an introductory section was a fantastic exercise in mastering responsive background images and creative SVG styling.
+
 ## 👩‍💻 Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
