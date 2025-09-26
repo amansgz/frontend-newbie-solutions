@@ -1,6 +1,7 @@
 # 🚀 Article Preview Component
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
 
@@ -40,6 +41,14 @@ Original Challenge: [Article preview component challenge on Frontend Mentor](htt
 [![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
+
+**Interactive card footer with tooltip transformation**
+
+- Created a mobile-friendly share button that reveals author links.
+- Transformed the card footer into an elegant tooltip for desktop.
+- Used CSS positioning (`absolute` + `transform`) for precise tooltip placement.
+- Implement the smooth transitions and the "speech bubble" triangle effect with borders.
+- Manage active states for the share button using JavaScript class toggles.
 
 ## 👩‍💻 Author
 
