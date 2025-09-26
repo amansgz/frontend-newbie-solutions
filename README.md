@@ -53,7 +53,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
      </div>
 
 5.  **Single Price Grid Component**
-    Learn to create a pricing component with multiple sections. Focuses on CSS grid layout and responsive pricing tables.
+    Pricing component with multiple sections. Focuses on CSS grid layout.
 
     [Live Demo](https://single-price-grid-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/single-price-grid-component)
 
@@ -62,7 +62,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
      </div>
 
 6.  **Four Card Feature Section**
-    A responsive grid layout featuring four feature cards. This project is excellent practice for creating CSS Grid layouts that adpat seamlessly across different screen sizes.
+    A responsive grid layout featuring four feature cards. This project is excellent practice for creating CSS Grid layouts that adapt seamlessly across different screen sizes.
 
     [Live Demo](https://four-cards-section-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/four-card-feature-section)
 
@@ -71,7 +71,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
     </div>
 
 7.  **Huddle Landing Page**
-    Create a simple landing page with a single call-to-action. Excellent practice for background styling and button design.
+    Simple landing page with a single call-to-action. Excellent practice for background styling and button design.
 
     [Live Demo](https://huddle-landing-page-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/huddle-landing-page)
 
@@ -80,7 +80,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
     </div>
 
 8.  **Stats Preview Card Component**
-    Learn to create a responsive stats card with an image color overlay. Excellent for practicing CSS grid and color manipulation techniques.
+    Responsive stats card with an image color overlay. Excellent for practicing CSS grid and color manipulation techniques.
 
     [Live Demo](https://stats-preview-component.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
 
@@ -98,7 +98,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
     </div>
 
 10. **3 Column Preview Card**
-    Build a multi-column layout that responds beautifully to different screen sizes. Perfect for mastering CSS flexbox and responsive design.
+    Multi-column layout that responds beautifully to different screen sizes. Perfect for mastering CSS flexbox and responsive design.
 
     [Live Demo](https://3column-cards-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/3-column-preview-card)
 
@@ -120,7 +120,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
     </div>
 
 12. **Article Preview Component**
-    Build an article preview with share tooltip that appears on click. JavaScript for show/hide functionality.
+    Article preview with share tooltip that appears on click. JavaScript for show/hide functionality.
 
     [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/article-preview-component)
 
@@ -129,7 +129,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
     </div>
 
 13. **Ping Coming Soon Page**
-    Practice building a minimalist coming soon page with email subscription. Great for learning about spacing and typography hierarchy.
+    Minimalist coming soon page with email subscription. Great for learning about spacing and typography hierarchy.
 
     [Live Demo](https://ping-coming-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/ping-soming-soon-page)
 
@@ -138,7 +138,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
     </div>
 
 14. **Base Apparel Coming Soon Page**  
-    Create a coming soon page with email validation. Excellent practice for form styling and basic JavaScript validation.
+    Coming soon page with email validation. Excellent practice for form styling and basic JavaScript validation.
 
     [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/base-apparel-coming-soon)
 
@@ -147,7 +147,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
     </div>
 
 15. **Intro Component with Form**  
-    Build a complete sign-up form with interactive validation states. Perfect for practicing form design and error messaging.
+    Complete sign-up form with interactive validation states. Perfect for practicing form design and error messaging.
 
     [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/intro-component-with-form)
 
@@ -156,7 +156,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
     </div>
 
 16. **Interactive Rating Component**
-    Rating component that changes state after suubmission. Basic JavaScript for interaction.
+    Rating component that changes state after submission. Basic JavaScript for interaction.
 
     [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/interactive-rating-component)
 
@@ -174,7 +174,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
     </div>
 
 18. **FAQ Accordion Card**
-    Build an interactive FAQ section with collapsing answers. Excellent practice for JavaScript event handling and CSS animations.
+    Interactive FAQ section with collapsing answers. Excellent practice for JavaScript event handling and CSS animations.
 
     [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/faq-accordion-card)
 
