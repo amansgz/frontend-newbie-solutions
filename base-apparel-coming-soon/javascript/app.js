@@ -1,7 +1,6 @@
-const inputEmail = document.querySelector(".input__email");
-const btnSubmit = document.querySelector(".btn__submit");
-const errorIcon = document.querySelector(".error__icon");
-const errorMessage = document.querySelector(".error__message");
+const form = document.querySelector(".form");
+const inputEmail = document.querySelector(".form__input");
+const btnSubmit = document.querySelector(".form__button");
 
 btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -10,14 +9,10 @@ btnSubmit.addEventListener("click", (e) => {
   const validation = validate_email(emailValue);
 
   if (!validation || inputEmail.value == "") {
-    errorIcon.style.opacity = "1";
-    errorMessage.style.opacity = "1";
-    inputEmail.style.border = "1px solid red";
+    form.classList.add("error-state");
   }
   if (validation) {
-    errorIcon.style.opacity = "0";
-    errorMessage.style.opacity = "0";
-    inputEmail.style.border = "1px solid hsl(0, 6%, 80%)";
+    form.classList.remove("error-state");
     inputEmail.value = "";
   }
 });

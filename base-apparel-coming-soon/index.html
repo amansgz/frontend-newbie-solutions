@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base Apparel Coming Soon</title>
-
+    <title>frontend Mentor | Base Apparel Coming Soon</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,15 +33,14 @@
 
     <main class="main-container">
       <section class="hero">
-        <picture>
+        <picture class="hero__image">
           <source
             srcset="./assets/images/hero-desktop.jpg"
             media="(min-width: 768px)"
           />
           <img
-            class="hero__image"
             src="./assets/images/hero-mobile.jpg"
-            alt="Base Apparel model"
+            alt="Fashion model representing Base Apparel's brand style"
           />
         </picture>
 
@@ -51,52 +55,42 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form class="subscribe-form" id="email-form">
-            <div class="subscribe-form__imput-group">
-              <div class="input-icon-wrapper">
-                <label class="sr-only" for="email" class="sr-only"
-                  >Email address</label
+
+          <form class="form" id="email-form" novalidate>
+            <div class="form__input-group">
+              <label class="sr-only" for="email-input" class="sr-only"
+                >Email address</label
+              >
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="email-input"
+                placeholder="Email Address"
+              />
+              <button type="submit" class="form__button" aria-label="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="20"
+                  aria-hidden="true"
                 >
-                <input
-                  class="subscribe-form__input"
-                  type="email"
-                  name="email"
-                  id="email-input"
-                  placeholder="Email Address"
-                />
-                <img
-                  class="subscribe-form__error-icon hidden"
-                  id="error-icon"
-                  src="./assets/icons/icon-error.svg"
-                />
-              </div>
-              <p
-                class="subscribe-form__error-message"
-                id="error-text"
-                aria-label="polite"
-              >
-                Please provide a valid email
-              </p>
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M1 1l8.836 8.836L1 18.671"
+                  />
+                </svg>
+              </button>
+              <img
+                class="form__error-icon"
+                id="error-icon"
+                src="./assets/icons/icon-error.svg"
+                alt=""
+              />
+              <p class="form__error-message">Please provide a valid email</p>
             </div>
-            <button
-              type="submit"
-              class="subscribe-form__button"
-              aria-label="submit"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="20"
-                aria-hidden="true"
-              >
-                <path
-                  fill="none"
-                  stroke="#FFF"
-                  stroke-width="2"
-                  d="M1 1l8.836 8.836L1 18.671"
-                />
-              </svg>
-            </button>
           </form>
         </div>
       </section>
@@ -104,11 +98,21 @@
     <footer class="footer">
       <small class="footer__attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Frontend Mentor </a
         ><br />
         Coded by
-        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
+        <a
+          href="https://github.com/amansgz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @amansgz
+        </a>
       </small>
     </footer>
   </body>

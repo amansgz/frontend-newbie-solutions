@@ -1,6 +1,7 @@
 # 🚀 Base Apparel Coming Soon Page
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
 
@@ -44,6 +45,14 @@ Original Challenge: [Base Apparel coming soon page challenge on Frontend Mentor]
 [![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
+
+**Dynamic Error Handling in Forms**
+
+- Implemented a real-time email validation system with visual feedback.
+- Used CSS transitions to smoothly show/hide error messages without layout shifts.
+- Positioned the error icon absolutely within the input field for precise placement.
+- Manages error states by toggling CSS classes via JavaScript while maintaining accessibility.
+- Created a non-intrusive error message that appears below the input without pushing content.
 
 ## 👩‍💻 Author
 
