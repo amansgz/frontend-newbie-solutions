@@ -31,7 +31,8 @@
           <img
             class="product-card__image"
             src="./assets/image-product-mobile.jpg"
-            alt="Bottle of perfume"
+            alt="Gabrielle Essence Eau De Parfum bottle resting on a table"
+            loading="lazy"
           />
         </picture>
 
@@ -46,24 +47,34 @@
           </p>
 
           <div class="product-card__prices">
-            <span class="product-card__price--current">$149.99</span>
-            <span class="product-card__price--old">$169.99</span>
+            <span class="product-card__price--current">
+              <span class="visually-hidden">Current price:</span>
+              $149.99</span
+            >
+            <span class="product-card__price--old">
+              <span class="visually-hidden">Original price:</span>
+              $169.99</span
+            >
           </div>
 
-          <button class="product-card__button">
+          <button
+            class="product-card__button"
+            aria-label="Add Gabrielle Essence Eau De Parfum to shopping cart"
+          >
             <img
               class="product-card__button-icon"
               src="./assets/icon-cart.svg"
-              alt="Shopping cart icon"
+              alt=""
+              aria-hidden="true"
             />
             Add to Cart
           </button>
         </div>
       </article>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="footer__attribution">
-        <span>
+        <p>
           Challenge by
           <a
             class="footer__attribution-link"
@@ -73,8 +84,8 @@
           >
             Frontend Mentor
           </a>
-        </span>
-        <span>
+        </p>
+        <p>
           Coded by
           <a
             class="footer__attribution-link"
@@ -84,7 +95,7 @@
           >
             @amansgz
           </a>
-        </span>
+        </p>
       </div>
     </footer>
   </body>
