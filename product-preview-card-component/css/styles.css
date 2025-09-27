@@ -154,7 +154,11 @@ body {
 @media (min-width: 768px) {
   .product-card {
     flex-direction: row;
-    max-width: 600px;
+    max-width: 660px;
+  }
+  .product-card__image-container {
+    width: 100%;
+    display: block;
   }
   .product-card__content {
     gap: var(--spacing-lg);
