@@ -33,7 +33,6 @@ Original Challenge: [Huddle landing page with single introductory section challe
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://huddle-landing-page-solution-css.netlify.app)
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
 

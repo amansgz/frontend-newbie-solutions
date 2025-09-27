@@ -82,7 +82,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
 8.  **Stats Preview Card Component**
     Responsive stats card with an image color overlay. Excellent for practicing CSS grid and color manipulation techniques.
 
-    [Live Demo](https://stats-preview-component.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
+    [Live Demo](https://stats-preview-component-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/stats-preview-card-component)
 
      <div>
        <img src="./stats-preview-card-component/design/preview.jpg" alt="Stats Preview Card Component desktop design" width="230">
@@ -122,7 +122,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
 12. **Article Preview Component**
     Article preview with share tooltip that appears on click. JavaScript for show/hide functionality.
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/article-preview-component)
+    [Live Demo](https://article-component-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/article-preview-component)
 
     <div>
       <img src="./article-preview-component/design/desktop-preview.jpg" alt="Desktop preview" width="230">
@@ -140,7 +140,7 @@ Interactive challenges that incorporate JavaScript for dynamic functionality.
 14. **Base Apparel Coming Soon Page**  
     Coming soon page with email validation. Excellent practice for form styling and basic JavaScript validation.
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/base-apparel-coming-soon)
+    [Live Demo](https://base-apparel-solution-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/base-apparel-coming-soon)
 
     <div>
       <img src="./base-apparel-coming-soon/design/preview.jpg" alt="Desktop preview" width="230">

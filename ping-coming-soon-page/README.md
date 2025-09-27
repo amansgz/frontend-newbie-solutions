@@ -43,7 +43,6 @@ Original Challenge: [Ping coming soon page challenge on Frontend Mentor](https:/
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://ping-coming-solution.netlify.app)
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
 

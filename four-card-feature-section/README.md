@@ -34,7 +34,6 @@ Original Challenge: [Four card feature section challenge on Frontend Mentor](htt
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://four-cards-section-solution.netlify.app)
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/css-grid-four-card-feature-section-TjkaZiu-J8)
 
 ## 📚 What I Learned
 

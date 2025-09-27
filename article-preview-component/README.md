@@ -38,7 +38,6 @@ Original Challenge: [Article preview component challenge on Frontend Mentor](htt
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)]()
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
 

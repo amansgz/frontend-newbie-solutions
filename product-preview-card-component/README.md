@@ -33,7 +33,6 @@ Original Challenge: [Product preview card component challenge on Frontend Mentor
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://product-card-solution-css.netlify.app)
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
 

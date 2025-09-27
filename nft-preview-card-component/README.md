@@ -33,7 +33,6 @@ Original Challenge: [NFT preview card component challenge on Frontend Mentor](ht
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](http://nft-card-css.netlify.app)
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
 
 ## 📚 What I Learned
 

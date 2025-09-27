@@ -33,7 +33,7 @@ Original Challenge: [3-column preview card component challenge on Frontend Mento
 ## 🔗 Links
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://3column-cards-css.netlify.app)
-[![Solution](https://img.shields.io/badge/Frontend_Mentor-solution-blue?style=for-the-badge)](https://www.frontendmentor.io/solutions/)
+
 
 ## 📚 What I Learned
 
