@@ -26,8 +26,8 @@
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
-*:before,
-*:after,
+*::before,
+*::after,
 * {
   box-sizing: border-box;
   margin: 0;
@@ -60,11 +60,11 @@ body {
   display: flex;
   flex-direction: column;
   max-width: min(330px, 90vw);
+  min-height: 400px;
   padding: 1rem;
   border-radius: 12px;
   background-color: var(--card-bg);
   box-shadow: var(--card-shadow-color);
-  min-height: 400px;
 }
 .qr-card__content {
   display: flex;
