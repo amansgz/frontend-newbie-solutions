@@ -20,43 +20,49 @@
   </head>
   <body>
     <main class="main-container">
-      <h1 class="sr-only">Profile card component</h1>
       <article class="profile-card">
         <header class="profile-card__header">
+          <img
+            class="profile-card__bg"
+            src="./assets/bg-pattern-card.svg"
+            alt=""
+            loading="lazy"
+            aria-hidden="true"
+          />
           <img
             class="profile-card__avatar"
             src="./assets/image-victor.jpg"
             alt="Victor Crest"
+            loading="lazy"
           />
         </header>
 
-        <div class="profile-card__body">
-          <div class="profile-card__info">
-            <h2 class="profile-card__name">Victor Crest</h2>
-            <span class="profile-card__age">26</span>
-            <p class="profile-card__location">London</p>
-          </div>
-
-          <footer class="profile-card__footer">
-            <ul class="profile-card__stats">
-              <li class="profile-card__stats-item">
-                <span class="profile-card__number">80K</span>
-                <span class="profile-card__label">Followers</span>
-              </li>
-              <li class="profile-card__stats-item">
-                <span class="profile-card__number"> 803K</span>
-                <span class="profile-card__label">Likes</span>
-              </li>
-              <li class="profile-card__stats-item">
-                <span class="profile-card__number"> 1.4K</span>
-                <span class="profile-card__label">Photos</span>
-              </li>
-            </ul>
-          </footer>
+        <div class="profile-card__content">
+          <h1 class="profile-card__name">
+            Victor Crest <span class="profile-card__age">26</span>
+          </h1>
+          <p class="profile-card__location">London</p>
         </div>
+
+        <footer class="profile-card__footer">
+          <ul class="profile-card__stats">
+            <li class="profile-card__stats-item">
+              <span class="profile-card__number">80K</span>
+              <span class="profile-card__label">Followers</span>
+            </li>
+            <li class="profile-card__stats-item">
+              <span class="profile-card__number"> 803K</span>
+              <span class="profile-card__label">Likes</span>
+            </li>
+            <li class="profile-card__stats-item">
+              <span class="profile-card__number"> 1.4K</span>
+              <span class="profile-card__label">Photos</span>
+            </li>
+          </ul>
+        </footer>
       </article>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p class="footer__attribution">
         Challenge by
         <a

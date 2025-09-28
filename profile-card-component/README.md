@@ -52,7 +52,6 @@ Original Challenge: [Profile card component challenge on Frontend Mentor](https:
 - **Flexbox Layout:** Mastered Flexbox for centering content both vertically and horizontally, and for creating responsive card components.
 - **Accessibility Best Practices:**
   - Used semantic HTML for better screen reader support.
-  - Included a `sr-only` (screen reader only) class to provide a hidden heading for screen reader users, improving the experience for those relying on assistive technologies.
   - Implement proper link attributes (noopener, noreferrer) for security.
 
 ## 👩‍💻 Author

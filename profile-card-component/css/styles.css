@@ -12,7 +12,6 @@
   --body-bg: var(--blue-600);
   --card-bg: var(--white);
   --card-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  --card-avatar-bg: var(--white);
   --card-avatar-border: var(--white);
   --text-primary: var(--navy-950);
   --text-secondary: var(--gray-500);
@@ -21,9 +20,12 @@
 
   /* Fonts */
   --font-family-body: "Kumbh Sans", sans-serif;
-  --font-size-lg: 1.125rem;
-  --font-size-md: 0.875rem;
-  --font-size-sm: 0.7rem;
+
+  --font-size-base: 18px;
+  --font-size-sm: clamp(0.7rem, 1.5vw + 0.3rem, 0.8rem);
+  --font-size-md: clamp(0.875rem, 2.5vw + 0.3rem, 1rem);
+  --font-size-lg: clamp(1rem, 3vw + 0.5rem, 1.125rem);
+
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -31,10 +33,20 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
+html {
+  font-size: 100%;
+  font-size: var(--font-size-base);
+}
 body {
   display: flex;
   flex-direction: column;
@@ -42,57 +54,59 @@ body {
 
   font-family: var(--font-family-body);
 
+  background-color: var(--body-bg);
   background-image: url(../assets/bg-pattern-top.svg),
     url(../assets/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
   background-size: 800px, 800px;
   background-position: right 50vw bottom 40vh, left 50vw top 40vh;
-  background-color: var(--body-bg);
 }
 .main-container {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   padding: 1rem;
+  min-height: calc(100vh - 80px);
 }
 .profile-card {
-  width: 100%;
-  max-width: 340px;
-  background-color: var(--card-bg);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--card-shadow);
-  text-align: center;
-}
-
-.profile-card__header {
-  position: relative;
-  height: 140px;
-  background-image: url("../assets/bg-pattern-card.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.profile-card__avatar {
-  width: 96px;
-  height: 96px;
-  background-color: var(--card-avatar-bg);
-  border: 5px solid var(--card-avatar-border);
-  border-radius: 50%;
-  transform: translateY(90%);
-  display: inline-block;
-  overflow: hidden;
-}
-.profile-card__body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: min(360px, 90vw);
+  min-height: 400px;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+.profile-card__header {
+  position: relative;
+  height: 150px;
+}
+.profile-card__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-card__avatar {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 96px;
+  border: 5px solid var(--card-avatar-border);
+  border-radius: 50%;
+}
+.profile-card__content {
+  display: flex;
+  flex-direction: column;
+
   margin-top: 4rem;
+  text-align: center;
 }
 /* User data */
 .profile-card__name {
-  display: inline-block;
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--text-primary);
@@ -100,6 +114,7 @@ body {
 .profile-card__age {
   margin-left: 0.3rem;
   font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
   color: var(--text-secondary);
 }
 .profile-card__location {
@@ -109,8 +124,7 @@ body {
 }
 /* Card footer with social media stats */
 .profile-card__footer {
-  width: 100%;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem;
   border-top: 1px solid var(--divider-color);
 }
 .profile-card__stats {
@@ -129,13 +143,12 @@ body {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--text-primary);
-  letter-spacing: 1px;
 }
 .profile-card__label {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
   color: var(--text-secondary);
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 /* Footer */
 .footer {
@@ -147,36 +160,23 @@ body {
 .footer__attribution-link {
   text-decoration: none;
   color: var(--text-primary);
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 .footer__attribution-link:hover,
 .footer__attribution-link:focus {
   color: var(--text-tertiary);
-  cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   body {
     background-size: 900px, 900px;
     background-position: right 50vw bottom 45vh, left 50vw top 45vh;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   body {
     background-size: 1000px, 1000px;
     background-position: right 50vw bottom 45vh, left 50vw top 45vh;
   }
-}
-/* Utilities */
-.sr-only {
-  /* Visually hides element but keeps it accesible for screen readers */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
