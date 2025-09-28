@@ -20,8 +20,8 @@
   --font-family-body: "Outfit", sans-serif;
 
   --font-size-base: 15px;
-  --font-size-h2: 1.35rem;
-  --font-size-text: 0.9rem;
+  --font-size-title: clamp(1.2rem, 3vw, 1.5rem);
+  --font-size-text: clamp(0.875rem, 2.5vw, 1rem);
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
@@ -33,7 +33,10 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  font-size: 100%;
+  font-size: var(--font-size-base);
+}
 body {
   display: flex;
   flex-direction: column;
@@ -43,49 +46,54 @@ body {
   font-size: var(--font-size-base);
 }
 .main-container {
-  flex-grow: 1; /* Pushes footer to the bottom */
-
   /* Center the card horizontally and vertically*/
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1; /* Pushes footer to the bottom */
 
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: var(--main-bg);
+  min-height: calc(100vh - 80px); /* according to the footer */
 }
 .qr-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px; /* Adds space between items */
-
-  width: 100%;
-  max-width: 330px;
+  max-width: min(330px, 90vw);
   padding: 1rem;
-  padding-bottom: 2rem;
-
-  text-align: center;
-  background-color: var(--card-bg);
   border-radius: 12px;
+  background-color: var(--card-bg);
   box-shadow: var(--card-shadow-color);
+  min-height: 400px;
+}
+.qr-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem; /* Adds space between items */
+  flex-grow: 1; /* cover disponible space */
+  text-align: center;
+  padding: 1rem 0;
 }
 .qr-card__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 240px;
   border-radius: 12px;
 }
 .qr-card__title {
   max-width: 18ch;
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-title);
   font-weight: var(--font-weight-bold);
   color: var(--card-title-color);
 }
 .qr-card__text {
-  max-width: 25ch;
+  max-width: 26ch;
   font-size: var(--font-size-text);
-  line-height: 1.5;
   color: var(--card-text-color);
+  line-height: 1.5;
 }
 .footer {
   padding: 1rem;
@@ -95,29 +103,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  font-size: var(--font-size-text);
+
+  font-size: 0.9rem;
   color: var(--footer-text-color);
 }
 .footer__attribution-link {
-  text-decoration: none;
   color: var(--footer-text-color);
-  transition: color 0.1s ease;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 .footer__attribution-link:hover,
 .footer__attribution-link:focus {
   color: var(--footer-attribution-link-hover-color);
-}
-/* Utilities */
-.sr-only {
-  /* Visually hides element but keeps it accesible for screen readers */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }

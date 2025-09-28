@@ -46,7 +46,6 @@ Original Challenge: [QR code component challenge on Frontend Mentor](https://www
 This project was an excellent exercise in building a semantically correct and accessible component. Here are the key takeaways:
 
 - **HTML Semantics:** I used an `<article>` element to wrap the card component, as it represents a self-contained composition that makes sense on its own.
-- **Accessibility:** Included a `sr-only` (screen reader only) class to provide a hidden heading for screen reader users, improving the experience for those relying on assistive technologies.
 - **Methodology:** Implemented the BEM (Block, Element, Modifier) naming convention for my CSS classes to create a clear, maintainable, and scalable structure.
 - **CSS Custom Properties:** Defined global CSS custom properties (variables) for the base colors according to the style guide. I also used specific variables for elements like the card and footer, as well as for typography (font family, sizes, and weights) to ensure consistency and easy theming.
 - **Layout & Centering:** Centered the card perfectly by applying Flexbox to both the `body` and `main` elements. This technique also naturally pushes the footer to the bottom of the viewport.
