@@ -11,22 +11,24 @@
   --font-family-body: "Lexend Deca", sans-serif;
   --font-family-heading: "Big Shoulders", sans-serif;
 
-  --font-size-heading: clamp(1.2rem, 4vw, 1.7rem);
-  --font-size-text: clamp(0.8rem, 2.5vw, 0.9rem);
+  --font-size-base: 15px;
+  --font-size-heading: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+  --font-size-text: clamp(0.9375rem, 1vw + 0.8rem, 1.1rem);
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
 
-*:before,
-*:after,
+*::before,
+*::after,
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 html {
-  font-size: 15px;
+  font-size: 100%;
+  font-size: var(--font-size-base);
 }
 body {
   display: flex;
@@ -36,10 +38,10 @@ body {
   background-color: var(--color-neutral-gray);
 }
 main {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   padding: 1rem;
 }
 .cards {
@@ -51,14 +53,17 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-
-  min-width: 240px;
+  max-width: min(340px, 90vw);
   padding: 2rem;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-grow: 1;
+}
 .card--sedans {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -76,6 +81,7 @@ main {
 .card__icon {
   width: 60px;
   height: auto;
+  margin-bottom: 2rem;
 }
 .card__title {
   font-family: var(--font-family-heading);
@@ -86,8 +92,7 @@ main {
   color: var(--color-neutral-gray);
 }
 .card__description {
-  width: 23ch;
-  max-width: 100%;
+  max-width: 26ch;
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-regular);
   line-height: 1.7;
@@ -95,15 +100,17 @@ main {
 }
 
 .card__button {
-  text-decoration: none;
+  display: inline-block;
   align-self: flex-start;
   padding: 0.7rem 1.4rem;
   font-size: 0.9rem;
+  text-decoration: none;
   text-align: center;
   border: 2px solid transparent;
   border-radius: 24px;
-  background-color: var(--color-neutral-white);
-  transition: color 0.1s ease;
+  background-color: var(--color-neutral-gray);
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 .card__button--sedans {
   color: var(--color-primary-gold);
@@ -118,9 +125,8 @@ main {
 /* Hover states: each button changes its background to primary color card and text button to neutral white color */
 .card__button:hover,
 .card__button:focus {
-  color: var(--color-neutral-white);
-  border: 2px solid var(--color-neutral-white);
-  cursor: pointer;
+  color: var(--color-neutral-gray);
+  border: 2px solid var(--color-neutral-gray);
 }
 
 .card__button:hover.card__button--sedans {
@@ -136,37 +142,36 @@ main {
 /* Footer */
 .footer {
   padding: 1rem;
+  text-align: center;
 }
 .footer__attribution {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  font-size: 0.9rem;
   color: var(--color-primary-cyan);
 }
 .footer__attribution a {
   text-decoration: none;
   color: var(--color-primary-cyan);
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 .footer__attribution a:hover,
 .footer__attribution a:focus {
   color: var(--color-primary-green);
-  cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .cards {
     flex-direction: row;
   }
   .card {
-    gap: 30px;
+    padding: 2.5rem;
   }
   .card__description {
-    margin-bottom: 3rem;
+    max-width: 23ch;
   }
   .card__button {
-    padding: 0.7rem 1.5rem;
+    padding: 0.7rem 2.5rem;
+    margin-top: 3.5rem;
   }
   .card--sedans {
     border-top-right-radius: 0;
