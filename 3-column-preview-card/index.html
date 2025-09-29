@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main aria-label="Vehicle type comparison: Sedans, SUVs, and Luxury cars">
-      <article class="cards">
-        <section class="card card--sedans" aria-labelledby="sedan-heading">
+    <main>
+      <h1 class="visually-hidden">Vehicle type comparison</h1>
+      <section class="cards-section" aria-label="Vehicle type comparisons">
+        <article class="card card--sedans" aria-labelledby="sedan-heading">
           <img
             class="card__icon"
             src="./assets/icon-sedans.svg"
@@ -42,9 +43,9 @@
               >Learn More</a
             >
           </div>
-        </section>
+        </article>
 
-        <section class="card card--suvs" aria-labelledby="suv-heading">
+        <article class="card card--suvs" aria-labelledby="suv-heading">
           <img
             class="card__icon"
             src="./assets/icon-suvs.svg"
@@ -64,9 +65,9 @@
               >Learn More</a
             >
           </div>
-        </section>
+        </article>
 
-        <section class="card card--luxury" aria-labelledby="luxury-heading">
+        <article class="card card--luxury" aria-labelledby="luxury-heading">
           <img
             class="card__icon"
             src="./assets/icon-luxury.svg"
@@ -86,8 +87,8 @@
               >Learn More</a
             >
           </div>
-        </section>
-      </article>
+        </article>
+      </section>
     </main>
     <footer
       class="footer"
