@@ -25,8 +25,8 @@
 *::after,
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -49,8 +49,7 @@ main {
 }
 
 .order-card {
-  width: 100%;
-  max-width: 360px;
+  max-width: min(360px, 90vw);
   background-color: var(--neutral-white);
   border-radius: 24px;
   overflow: hidden;
@@ -75,7 +74,7 @@ main {
   color: var(--neutral-blue);
 }
 .order-card__description {
-  width: 24ch;
+  max-width: 24ch;
   color: var(--neutral-gray);
   line-height: 1.6;
 }
@@ -110,7 +109,7 @@ main {
   text-decoration: underline;
   color: var(--primary-blue);
   cursor: pointer;
-  transition: color 0.2s ease text-decoration 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 .order-card__plan-change:hover,
 .order-card__plan-change:focus {
@@ -163,24 +162,11 @@ main {
   color: var(--primary-blue);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     background-image: url("../assets/pattern-background-desktop.svg");
   }
   .order-card__description {
-    width: 27ch;
+    max-width: 27ch;
   }
-}
-/* Utilities */
-.sr-only {
-  /* Visually hides element but keeps it accesible for screen readers */
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
