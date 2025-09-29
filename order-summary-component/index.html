@@ -21,59 +21,68 @@
   </head>
   <body>
     <main>
-      <h1 class="sr-only">Order Summary Card Component</h1>
-      <article class="order-card">
+      <article class="order-card" aria-labelledby="order-title">
         <img
           class="order-card__image"
           src="./assets/illustration-hero.svg"
-          alt="Smiling person listening music"
+          alt="Person happily listening to music through headphones with colorful background"
         />
 
         <div class="order-card__content">
-          <h2 class="order-card__title">Order Summary</h2>
+          <h1 id="order-title" class="order-card__title">Order Summary</h1>
           <p class="order-card__description">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <div class="order-card__plan">
-            <svg
+          <div class="order-card__plan" aria-labelledby="plan-name">
+            <img
               class="order-card__plan-icon"
-              xmlns="http://www.w3.org/2000/svg"
+              src="./assets/icon-music.svg"
+              alt=""
               width="48"
               height="48"
               aria-hidden="true"
-            >
-              <g fill="none" fill-rule="evenodd">
-                <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
-                <path
-                  fill="#717FA6"
-                  fill-rule="nonzero"
-                  d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
-                />
-              </g>
-            </svg>
+            />
 
             <div class="order-card__plan-details">
-              <span class="order-card__plan-name">Annual Plan </span>
+              <span id="plan-name" class="order-card__plan-name"
+                >Annual Plan
+              </span>
               <span class="order-card__plan-price">$59.99/year</span>
             </div>
-            <a href="#" class="order-card__plan-change">Change</a>
+            <a
+              href="#"
+              class="order-card__plan-change"
+              aria-label="Change subscription plan"
+              >Change</a
+            >
           </div>
 
-          <button class="button button--pay">Proceed to Payment</button>
-          <button class="button button--cancel">Cancel Order</button>
+          <button
+            class="button button--pay"
+            aria-label="Proceed to payment for annual plan subscription"
+          >
+            Proceed to Payment
+          </button>
+          <button
+            class="button button--cancel"
+            aria-label="Cancel order and return to previous page"
+          >
+            Cancel Order
+          </button>
         </div>
       </article>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p class="footer__attribution">
         Challenge by
         <a
           class="footer__attribution-link"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          rel="noopener referrer"
+          rel="noopener noreferrer"
+          aria-label="Visit Frontend Mentor website (opens in new window)"
         >
           Frontend Mentor
         </a>
@@ -84,7 +93,8 @@
           class="footer__attribution-link"
           href="https://github.com/amansgz"
           target="_blank"
-          rel="noopener referrer"
+          rel="noopener noreferrer"
+          aria-label="Visit developer's Github profile (opens in new window)"
           >@amansgz</a
         >
       </p>
