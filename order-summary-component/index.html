@@ -1,103 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Order Summary Component</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <main>
-      <article class="order-card" aria-labelledby="order-title">
-        <img
-          class="order-card__image"
-          src="./assets/illustration-hero.svg"
-          alt="Person happily listening to music through headphones with colorful background"
-        />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="order-card__content">
-          <h1 id="order-title" class="order-card__title">Order Summary</h1>
-          <p class="order-card__description">
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
-          <div class="order-card__plan" aria-labelledby="plan-name">
-            <img
-              class="order-card__plan-icon"
-              src="./assets/icon-music.svg"
-              alt=""
-              width="48"
-              height="48"
-              aria-hidden="true"
-            />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-            <div class="order-card__plan-details">
-              <span id="plan-name" class="order-card__plan-name"
-                >Annual Plan
-              </span>
-              <span class="order-card__plan-price">$59.99/year</span>
-            </div>
-            <a
-              href="#"
-              class="order-card__plan-change"
-              aria-label="Change subscription plan"
-              >Change</a
-            >
+  <title>Frontend Mentor | Order Summary Component</title>
+  <meta name="description"
+    content="Access millions of songs, audiobooks, and podcasts anywhere. Review your annual plan, modify subscription, and proceed to secure payment with easy cancellation options.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main>
+    <article class="order-card" aria-labelledby="order-title">
+      <img class="order-card__image" src="./assets/illustration-hero.svg"
+        alt="Person happily listening to music through headphones with colorful background">
+
+      <div class="order-card__content">
+        <h1 id="order-title" class="order-card__title">Order Summary</h1>
+        <p class="order-card__description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="order-card__plan" aria-labelledby="plan-name">
+          <img class="order-card__plan-icon" src="./assets/icon-music.svg" alt="" width="48" height="48"
+            aria-hidden="true">
+
+          <div class="order-card__plan-details">
+            <span id="plan-name" class="order-card__plan-name">Annual Plan
+            </span>
+            <span class="order-card__plan-price">$59.99/year</span>
           </div>
-
-          <button
-            class="button button--pay"
-            aria-label="Proceed to payment for annual plan subscription"
-          >
-            Proceed to Payment
-          </button>
-          <button
-            class="button button--cancel"
-            aria-label="Cancel order and return to previous page"
-          >
-            Cancel Order
-          </button>
+          <a href="#" class="order-card__plan-change" aria-label="Change subscription plan">Change</a>
         </div>
-      </article>
-    </main>
 
-    <footer class="footer" role="contentinfo">
-      <p class="footer__attribution">
-        Challenge by
-        <a
-          class="footer__attribution-link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Frontend Mentor website (opens in new window)"
-        >
-          Frontend Mentor
-        </a>
-      </p>
-      <p class="footer__attribution">
-        Coded by
-        <a
-          class="footer__attribution-link"
-          href="https://github.com/amansgz"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit developer's Github profile (opens in new window)"
-          >@amansgz</a
-        >
-      </p>
-    </footer>
-  </body>
+        <button class="button button--pay" aria-label="Proceed to payment for annual plan subscription">
+          Proceed to Payment
+        </button>
+        <button class="button button--cancel" aria-label="Cancel order and return to previous page">
+          Cancel Order
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer" aria-label="Challenge attribution information">
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit developer's Github profile (opens in new window)">@amansgz</a>
+    </p>
+  </footer>
+</body>
+
 </html>

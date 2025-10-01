@@ -1,144 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro Component With Sign Up Form</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./javascript/app.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <section class="intro__section">
-        <div class="grid__container">
-          <div class="content">
-            <h1 class="content__title">Learn to code by watching others</h1>
-            <p class="content__text">
-              See how experienced developers solve problems in real-time.
-              Watching scripted tutorials is great, but understanding how
-              developers think is invaluable.
-            </p>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-          <div class="form__container">
-            <h2 class="form__title">
-              <strong> Try it free 7 days </strong>
-              then $20/mo. thereafter
-            </h2>
+  <title>Intro Component With Sign Up Form</title>
+  <meta name="description"
+    content="Get started with our platform. Easy onboarding process with clear instructions and seamless user introduction experience">
 
-            <form action="#" class="form">
-              <div class="input__container">
-                <label for="first-name"></label>
-                <input
-                  class="input__value"
-                  type="text"
-                  name="first-name"
-                  pattern="[A-Za-z]+"
-                  id="first-name"
-                  placeholder="First Name"
-                />
-                <svg class="error__icon">
-                  <use href="#error__message__icon"></use>
-                </svg>
-                <p class="error__message"></p>
-              </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./javascript/app.js" defer></script>
+</head>
 
-              <div class="input__container">
-                <label for="last-name"></label>
-                <input
-                  class="input__value"
-                  type="text"
-                  name="last-name"
-                  pattern="[A-Za-z]+"
-                  id="last-name"
-                  placeholder="Last Name"
-                />
-                <svg class="error__icon">
-                  <use href="#error__message__icon"></use>
-                </svg>
-                <p class="error__message"></p>
-              </div>
-
-              <div class="input__container">
-                <label for="email"></label>
-                <input
-                  class="input__email"
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Email Address"
-                />
-                <svg class="error__icon">
-                  <use href="#error__message__icon"></use>
-                </svg>
-                <p class="error__message"></p>
-              </div>
-
-              <div class="input__container">
-                <label for="password"></label>
-                <input
-                  class="input__value"
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Password"
-                />
-                <svg class="error__icon">
-                  <use href="#error__message__icon"></use>
-                </svg>
-                <p class="error__message"></p>
-              </div>
-
-              <input
-                class="btn__submit"
-                type="submit"
-                id="btnSubmit"
-                value="Claim your free trial"
-              />
-              <!-- check -->
-              <small class="form__agreement">
-                By clicking the button, you are agreeing to our
-                <strong> Terms and Services </strong>
-              </small>
-            </form>
-          </div>
+<body>
+  <main>
+    <section class="intro__section">
+      <div class="grid__container">
+        <div class="content">
+          <h1 class="content__title">Learn to code by watching others</h1>
+          <p class="content__text">
+            See how experienced developers solve problems in real-time.
+            Watching scripted tutorials is great, but understanding how
+            developers think is invaluable.
+          </p>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <small class="footer__attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor </a
-        ><br />
-        Coded by
-        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
-      </small>
-    </footer>
-  </body>
+
+        <div class="form__container">
+          <h2 class="form__title">
+            <strong> Try it free 7 days </strong>
+            then $20/mo. thereafter
+          </h2>
+
+          <form action="#" class="form">
+            <div class="input__container">
+              <label for="first-name"></label>
+              <input class="input__value" type="text" name="first-name" pattern="[A-Za-z]+" id="first-name"
+                placeholder="First Name">
+              <svg class="error__icon">
+                <use href="#error__message__icon"></use>
+              </svg>
+              <p class="error__message"></p>
+            </div>
+
+            <div class="input__container">
+              <label for="last-name"></label>
+              <input class="input__value" type="text" name="last-name" pattern="[A-Za-z]+" id="last-name"
+                placeholder="Last Name">
+              <svg class="error__icon">
+                <use href="#error__message__icon"></use>
+              </svg>
+              <p class="error__message"></p>
+            </div>
+
+            <div class="input__container">
+              <label for="email"></label>
+              <input class="input__email" type="text" name="email" id="email" placeholder="Email Address">
+              <svg class="error__icon">
+                <use href="#error__message__icon"></use>
+              </svg>
+              <p class="error__message"></p>
+            </div>
+
+            <div class="input__container">
+              <label for="password"></label>
+              <input class="input__value" type="password" name="password" id="password" placeholder="Password">
+              <svg class="error__icon">
+                <use href="#error__message__icon"></use>
+              </svg>
+              <p class="error__message"></p>
+            </div>
+
+            <input class="btn__submit" type="submit" id="btnSubmit" value="Claim your free trial">
+            <!-- check -->
+            <small class="form__agreement">
+              By clicking the button, you are agreeing to our
+              <strong> Terms and Services </strong>
+            </small>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Challenge attribution information">
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit amansgz Github profile (opens in new window)">
+        @amansgz
+      </a>
+    </p>
+  </footer>
+</body>
+
 </html>
 <!-- Svgs -->
 <div style="display: none">
-  <svg
-    width="24"
-    height="24"
-    xmlns="http://www.w3.org/2000/svg"
-    id="error__message__icon"
-  >
+  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" id="error__message__icon">
     <g fill="none" fill-rule="evenodd">
       <circle fill="#FF7979" cx="12" cy="12" r="12" />
       <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />

@@ -13,33 +13,33 @@
 
   /* Fonts */
   --font-family-base: "Poppins", sans-serif;
+  --font-size-base: 15px;
   --font-weight-thin: 200;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
 }
+*,
 *::before,
-*::after,
-* {
+*::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-html {
-  font-size: 15px;
+  padding: 0;
 }
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
   font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
   background-color: var(--color-neutral-white);
 }
 main {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
   padding: 2rem 1rem;
 }
 .intro-section {
@@ -151,7 +151,7 @@ main {
     padding: 0 2rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .cards-section {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -175,7 +175,7 @@ main {
     grid-row: 2 / 3;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .cards-section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);

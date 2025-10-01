@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ Accordion Card</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <main class="main-container">
-      <section>
-        <div class="card">
-          <div class="card__content">
-            <picture>
-              <source
-                media="(max-width: 768px)"
-                srcset="./assets/illustration-woman-online-mobile.svg"
-              />
-              <img
-                class="card__image"
-                src="./assets/illustration-woman-online-desktop.svg"
-                alt="woman online"
-              />
-            </picture>
-          </div>
-          <!-- 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Accordion Card</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="main-container">
+    <section>
+      <div class="card">
+        <div class="card__content">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./assets/illustration-woman-online-mobile.svg">
+            <img class="card__image" src="./assets/illustration-woman-online-desktop.svg" alt="woman online">
+          </picture>
+        </div>
+        <!-- 
           <picture class="image__box__desktop">
             <img src="./assets/illustration-box-desktop.svg" alt="little box" />
           </picture> -->
 
-          <div class="accordion" id="accordion-container">
-            <h1 class="accordion__title">FAQ</h1>
+        <div class="accordion" id="accordion-container">
+          <h1 class="accordion__title">FAQ</h1>
 
-            <details class="accordion__item">
-              <summary class="accordion__question">
-                How many team members can I invite?
-              </summary>
-              <p class="accordion__answer">
-                You can invite up to 2 additional users on the Free plan. There
-                is no limit on team members for the Premium plan.
-              </p>
-            </details>
+          <details class="accordion__item">
+            <summary class="accordion__question">
+              How many team members can I invite?
+            </summary>
+            <p class="accordion__answer">
+              You can invite up to 2 additional users on the Free plan. There
+              is no limit on team members for the Premium plan.
+            </p>
+          </details>
 
-            <details class="accordion__item">
-              <summary class="accordion__question">
-                What is the maximum file upload size?
-              </summary>
-              <p class="accordion__answer">
-                No more than 2GB. All files in your account must fit your
-                allotted storage space.
-              </p>
-            </details>
+          <details class="accordion__item">
+            <summary class="accordion__question">
+              What is the maximum file upload size?
+            </summary>
+            <p class="accordion__answer">
+              No more than 2GB. All files in your account must fit your
+              allotted storage space.
+            </p>
+          </details>
 
-            <details class="accordion__item">
-              <summary class="accordion__question">
-                How do I reset my password?
-              </summary>
-              <p class="accordion__answer">
-                Click “Forgot password” from the login page or “Change password”
-                from your profile page. A reset link will be emailed to you.
-              </p>
-            </details>
+          <details class="accordion__item">
+            <summary class="accordion__question">
+              How do I reset my password?
+            </summary>
+            <p class="accordion__answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </details>
 
-            <details class="accordion__item">
-              <summary class="accordion__question">
-                Can I cancel my subscription?
-              </summary>
-              <p class="accordion__answer">
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </p>
-            </details>
+          <details class="accordion__item">
+            <summary class="accordion__question">
+              Can I cancel my subscription?
+            </summary>
+            <p class="accordion__answer">
+              Yes! Send us a message and we’ll process your request no
+              questions asked.
+            </p>
+          </details>
 
-            <details class="accordion__item">
-              <summary class="accordion__question">
-                Do you provide additional support?
-              </summary>
-              <p class="accordion__answer">
-                Chat and email support is available 24/7. Phone lines are open
-                during normal business hours.
-              </p>
-            </details>
-          </div>
+          <details class="accordion__item">
+            <summary class="accordion__question">
+              Do you provide additional support?
+            </summary>
+            <p class="accordion__answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </details>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <small class="footer__attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor </a
-        ><br />
-        Coded by
-        <a href="https://github.com/amansgz" target="_blank"> @amansgz </a>
-      </small>
-    </footer>
-  </body>
+  <footer class="footer" aria-label="Challenge attribution information">
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit amansgz Github profile (opens in new window)">
+        @amansgz
+      </a>
+    </p>
+  </footer>
+</body>
+
 </html>

@@ -1,119 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Social Proof Section</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/favicon-32x32.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./javascript/app.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <section class="intro-section">
-        <div class="intro__container">
-          <div class="intro__content">
-            <h1 class="intro__title">
-              10,000+ of our users love our products.
-            </h1>
-            <p class="intro__text">
-              We only provide great products combined with excellent customer
-              service. See what our satisfied customers are saying about our
-              services.
-            </p>
-          </div>
 
-          <div class="rates-container" id="rates"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <title>Frontend Mentor | Social Proof Section</title>
+  <meta name="description"
+    content="Build trust with social proof. Display customer review, ratings, and testimonials to showcase credibility and satisfaction.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./javascript/app.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="intro-section">
+      <div class="intro__container">
+        <div class="intro__content">
+          <h1 class="intro__title">
+            10,000+ of our users love our products.
+          </h1>
+          <p class="intro__text">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
         </div>
 
-        <section class="testimonials">
-          <div class="testimonials__container">
-            <article class="card">
-              <div class="card__header">
-                <figure class="card__photo">
-                  <img src="./assets/images/image-colton.jpg" alt="customer" />
-                </figure>
-                <div class="card__customer-info">
-                  <h2 class="card__customer-name">Colton Smith</h2>
-                  <p class="card__customer-title">Verified Buyer</p>
-                </div>
-              </div>
-              <blockquote class="card__quote">
-                "We needed the same printed design as the one we had ordered a
-                week prior. Not only did they find the original order, but we
-                also received it in time. Excellent!"
-              </blockquote>
-            </article>
-
-            <article class="card">
-              <div class="card__header">
-                <figure class="card__photo">
-                  <img src="./assets/images/image-irene.jpg" alt="customer" />
-                </figure>
-                <div class="card__customer-info">
-                  <h2 class="card__customer-name">Irene Roberts</h2>
-                  <p class="card__customer-title">Verified Buyer</p>
-                </div>
-              </div>
-              <blockquote class="card__quote">
-                "Customer service is always excellent and very quick turn
-                around. Completely delighted with the simplicity of the purchase
-                and the speed of delivery."
-              </blockquote>
-            </article>
-
-            <article class="card">
-              <div class="card__header">
-                <figure class="card__photo">
-                  <img src="./assets/images/image-anne.jpg" alt="customer" />
-                </figure>
-                <div class="card__customer-info">
-                  <h2 class="card__customer-name">Anne Wallace</h2>
-                  <p class="card__customer-title">Verified Buyer</p>
-                </div>
-              </div>
-              <blockquote class="card__quote">
-                "Put an order with this company and can only praise them for the
-                very high standard. Will definitely use them again and recommend
-                them to everyone!"
-              </blockquote>
-            </article>
-          </div>
-        </section>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__attribution">
-        <p>
-          Challenge by
-          <a
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Frontend Mentor
-          </a>
-        </p>
-        <p>
-          Coded by
-          <a
-            href="https://github.com/amansgz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @amansgz
-          </a>
-        </p>
+        <div class="rates-container" id="rates"></div>
       </div>
-    </footer>
-  </body>
+
+      <section class="testimonials">
+        <div class="testimonials__container">
+          <article class="card">
+            <div class="card__header">
+              <figure class="card__photo">
+                <img src="./assets/images/image-colton.jpg" alt="customer">
+              </figure>
+              <div class="card__customer-info">
+                <h2 class="card__customer-name">Colton Smith</h2>
+                <p class="card__customer-title">Verified Buyer</p>
+              </div>
+            </div>
+            <blockquote class="card__quote">
+              "We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we
+              also received it in time. Excellent!"
+            </blockquote>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <figure class="card__photo">
+                <img src="./assets/images/image-irene.jpg" alt="customer">
+              </figure>
+              <div class="card__customer-info">
+                <h2 class="card__customer-name">Irene Roberts</h2>
+                <p class="card__customer-title">Verified Buyer</p>
+              </div>
+            </div>
+            <blockquote class="card__quote">
+              "Customer service is always excellent and very quick turn
+              around. Completely delighted with the simplicity of the purchase
+              and the speed of delivery."
+            </blockquote>
+          </article>
+
+          <article class="card">
+            <div class="card__header">
+              <figure class="card__photo">
+                <img src="./assets/images/image-anne.jpg" alt="customer">
+              </figure>
+              <div class="card__customer-info">
+                <h2 class="card__customer-name">Anne Wallace</h2>
+                <p class="card__customer-title">Verified Buyer</p>
+              </div>
+            </div>
+            <blockquote class="card__quote">
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone!"
+            </blockquote>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer" aria-label="Challenge attribution information">
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit amansgz Github profile (opens in new window)">
+        @amansgz
+      </a>
+    </p>
+
+  </footer>
+</body>
+
 </html>

@@ -23,37 +23,34 @@
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
 }
+*,
 *::before,
-*::after,
-* {
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-html {
-  font-size: 100%;
-  font-size: var(font-size-body);
 }
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: var(--font-family-body);
+  font-size: var(font-size-body);
   background-color: var(--color-neutral-blue-950);
 }
 .main-container {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   padding: 1rem;
 }
 
 .card {
-  max-width: min(340px, 90vw);
   display: flex;
   flex-direction: column;
 
+  max-width: min(340px, 90vw);
   padding: 1.5rem;
   padding-bottom: 1rem;
   background-color: var(--color-neutral-blue-900);
@@ -183,12 +180,12 @@ body {
   text-align: center;
   color: var(--color-primary-blue);
 }
-.footer__attribution a {
+.footer__attribution-link {
   text-decoration: none;
   color: var(--color-primary-blue);
   transition: color 0.2s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus {
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
   color: var(--color-primary-cyan);
 }

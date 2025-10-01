@@ -36,13 +36,12 @@
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
 }
-
+*,
 *::before,
-*::after,
-* {
+*::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 body {
   display: flex;
@@ -50,14 +49,14 @@ body {
   min-height: 100vh;
 
   font-family: var(--font-family-body);
-
+  font-size: var(--font-size-base);
   background-color: var(--color-neutral-white);
   background-image: var(--body-gradient);
 }
 .main-container {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 /* Header */
 .header {
@@ -106,8 +105,8 @@ body {
   width: 100%;
 }
 .form__input-group {
-  width: 100%;
   position: relative;
+  width: 100%;
   margin-bottom: 2rem;
 }
 .form__input {
@@ -181,17 +180,17 @@ body {
   text-align: center;
   color: var(--color-neutral-gray);
 }
-.footer__attribution a {
+.footer__attribution-link {
   text-decoration: none;
   color: var(--color-neutral-gray);
   transition: color 0.1s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus {
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
   color: var(--color-primary-red);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header {
     position: absolute;
     width: 50%;
@@ -218,7 +217,7 @@ body {
     max-width: 400px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .hero__content {
     width: 50%;
     align-items: flex-start;

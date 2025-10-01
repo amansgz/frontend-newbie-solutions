@@ -1,102 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Product Preview Card Component</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <main class="main-container">
-      <article class="product-card">
-        <picture class="product-card__image-container">
-          <source
-            media="(min-width: 768px)"
-            srcset="./assets/image-product-desktop.jpg"
-          />
-          <img
-            class="product-card__image"
-            src="./assets/image-product-mobile.jpg"
-            alt="Gabrielle Essence Eau De Parfum bottle resting on a table"
-            loading="lazy"
-          />
-        </picture>
 
-        <div class="product-card__content">
-          <span class="product-card__category">Perfume</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-          <h1 class="product-card__title">Gabrielle Essence Eau De Parfum</h1>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-          <p class="product-card__description">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
+  <title>Frontend Mentor | Product Preview Card Component</title>
+  <meta name="description"
+    content="Discover Gabrielle Essence Eau De Parfum - A floral, solar and voluptuous interpretation composed by Olivier Polge for CHANEL">
 
-          <div class="product-card__prices">
-            <span class="product-card__price--current">
-              <span class="visually-hidden">Current price:</span>
-              $149.99</span
-            >
-            <span class="product-card__price--old">
-              <span class="visually-hidden">Original price:</span>
-              $169.99</span
-            >
-          </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
 
-          <button
-            class="product-card__button"
-            aria-label="Add Gabrielle Essence Eau De Parfum to shopping cart"
-          >
-            <img
-              class="product-card__button-icon"
-              src="./assets/icon-cart.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            Add to Cart
-          </button>
+<body>
+  <main class="main-container">
+    <article class="product-card">
+      <picture class="product-card__image-container">
+        <source media="(min-width: 768px)" srcset="./assets/image-product-desktop.jpg">
+        <img class="product-card__image" src="./assets/image-product-mobile.jpg"
+          alt="Gabrielle Essence Eau De Parfum bottle resting on a table" loading="lazy">
+      </picture>
+
+      <div class="product-card__content">
+        <span class="product-card__category">Perfume</span>
+
+        <h1 class="product-card__title">Gabrielle Essence Eau De Parfum</h1>
+
+        <p class="product-card__description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <div class="product-card__prices">
+          <span class="product-card__price--current">
+            <span class="visually-hidden">Current price:</span>
+            $149.99</span>
+          <span class="product-card__price--old">
+            <span class="visually-hidden">Original price:</span>
+            $169.99</span>
         </div>
-      </article>
-    </main>
-    <footer class="footer" role="contentinfo">
-      <div class="footer__attribution">
-        <p>
-          Challenge by
-          <a
-            class="footer__attribution-link"
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Frontend Mentor
-          </a>
-        </p>
-        <p>
-          Coded by
-          <a
-            class="footer__attribution-link"
-            href="https://github.com/amansgz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @amansgz
-          </a>
-        </p>
+
+        <button class="product-card__button" aria-label="Add Gabrielle Essence Eau De Parfum to shopping cart">
+          <img class="product-card__button-icon" src="./assets/icon-cart.svg" alt="" aria-hidden="true">
+          Add to Cart
+        </button>
       </div>
-    </footer>
-  </body>
+    </article>
+  </main>
+  <footer class="footer" aria-label="Challenge attribution information">
+
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit amansgz Github profile (opens in new window)">
+        @amansgz
+      </a>
+    </p>
+  </footer>
+</body>
+
 </html>

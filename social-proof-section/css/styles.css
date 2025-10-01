@@ -8,9 +8,9 @@
   --color-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
 
   /* Fonts */
-  --ff-body: "Spartan", sans-serif;
+  --font-family-body: "Spartan", sans-serif;
 
-  --font-size-body: 15px;
+  --font-size-base: 15px;
 
   --font-size-primary: clamp(2rem, 2.5vw, 3rem);
   --font-size-secondary: clamp(0.8rem, 1.5vw, 1rem);
@@ -20,23 +20,20 @@
   --font-weight-bold: 700;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
-  font-size: var(--font-size-body);
-}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
-  font-family: var(--ff-body);
-
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
   background-image: url(../assets/bg-patterns/bg-pattern-top-mobile.svg),
     url(../assets/bg-patterns/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
@@ -151,18 +148,18 @@ body {
   text-align: center;
   color: var(--color-primary-very-dark-magenta);
 }
-.footer__attribution a {
+.footer__attribution-link {
   text-decoration: none;
   color: var(--color-primary-very-dark-magenta);
   transition: color 0.1s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus {
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
   color: var(--color-primary-soft-pink);
 }
 
 /* Media queries */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     background-image: url(../assets/bg-patterns/bg-pattern-top-desktop.svg),
       url(../assets/bg-patterns/bg-pattern-bottom-desktop.svg);

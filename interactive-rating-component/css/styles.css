@@ -7,13 +7,12 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
-* {
-  padding: 0;
-  margin: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-}
-html {
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   display: grid;
@@ -152,12 +151,12 @@ input[type="radio"]:checked + .option {
   text-align: center;
   color: var(--light-blue);
 }
-.footer__attribution a {
+.footer__attribution-link {
   text-decoration: none;
   color: var(--light-blue);
   transition: color 0.1s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus-visible {
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
   color: var(--medium-grey);
 }

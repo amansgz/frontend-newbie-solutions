@@ -14,37 +14,35 @@
 
   /* Fonts */
   --font-family-primary: "Red Hat Display", sans-serif;
-  --fs-body: 1rem;
+  --fs-base: 16px;
   --fs-heading: 1.5rem;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-black: 900;
 }
-
+*,
 *::before,
-*::after,
-* {
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: var(--font-family-primary);
-  font-size: var(--fs-body);
+  font-size: var(--fs-base);
   background-color: var(--primary-light-blue);
   background-image: url("../assets/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% 50%;
 }
 main {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   padding: 1rem;
 }
 

@@ -8,12 +8,12 @@
   --fw-regular: 400;
   --fw-semibold: 600;
 }
+*,
 *::before,
-*::after,
-* {
+*::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 body {
   display: flex;
@@ -29,10 +29,10 @@ body {
   background-position: top center;
 }
 .main-container {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 .header {
   padding: 2rem;
@@ -128,7 +128,7 @@ body {
 .social-menu a:hover svg {
   fill: var(--primary-magenta);
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .intro__image {
     width: 70%;
   }
@@ -139,7 +139,7 @@ body {
     max-width: 54ch;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     background-image: url("../assets/images/bg-desktop.svg");
     background-position: left center;

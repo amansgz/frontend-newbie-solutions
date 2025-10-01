@@ -1,119 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend Mentor | Base Apparel Coming Soon</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./javascript/app.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#">
-        <img
-          class="header__logo"
-          src="./assets/images/logo.svg"
-          alt="Base Apparel logo"
-        />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <title>Frontend Mentor | Base Apparel Coming Soon</title>
+  <meta name="description"
+    content="Base Apparel is launching soon! Join our fashion store waiting list for exclusive launch deals and annoucements. Be the first to know when we open.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./javascript/app.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img class="header__logo" src="./assets/images/logo.svg" alt="Base Apparel logo">
+    </a>
+  </header>
+
+  <main class="main-container">
+    <section class="hero">
+      <picture class="hero__image">
+        <source srcset="./assets/images/hero-desktop.jpg" media="(min-width: 768px)">
+        <img src="./assets/images/hero-mobile.jpg" alt="Fashion model representing Base Apparel's brand style">
+      </picture>
+
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="emphasis"> We're </span>
+          coming <br> <!-- sacar -->
+          soon
+        </h1>
+        <p class="hero__description">
+          Hello fellow shoppers! We're currently building our new fashion
+          store. Add your email below to stay up-to-date with announcements
+          and our launch deals.
+        </p>
+
+        <form class="form" id="email-form" novalidate>
+          <div class="form__input-group">
+            <label class="sr-only" for="email-input">Email address</label>
+            <input class="form__input" type="email" name="email" id="email-input" placeholder="Email Address">
+            <button type="submit" class="form__button" aria-label="submit">
+              <img src="./assets/icons/icon-arrow.svg" alt="" aria-hidden="true">
+            </button>
+            <img class="form__error-icon" id="error-icon" src="./assets/icons/icon-error.svg" alt="">
+            <p class="form__error-message">Please provide a valid email</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" aria-label="Challenge attribution information">
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
       </a>
-    </header>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit amansgz Github profile (opens in new window)">@amansgz</a>
+    </p>
+  </footer>
+</body>
 
-    <main class="main-container">
-      <section class="hero">
-        <picture class="hero__image">
-          <source
-            srcset="./assets/images/hero-desktop.jpg"
-            media="(min-width: 768px)"
-          />
-          <img
-            src="./assets/images/hero-mobile.jpg"
-            alt="Fashion model representing Base Apparel's brand style"
-          />
-        </picture>
-
-        <div class="hero__content">
-          <h1 class="hero__title">
-            <span class="emphasis"> We're </span>
-            coming <br />
-            soon
-          </h1>
-          <p class="hero__description">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-
-          <form class="form" id="email-form" novalidate>
-            <div class="form__input-group">
-              <label class="sr-only" for="email-input" class="sr-only"
-                >Email address</label
-              >
-              <input
-                class="form__input"
-                type="email"
-                name="email"
-                id="email-input"
-                placeholder="Email Address"
-              />
-              <button type="submit" class="form__button" aria-label="submit">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="20"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill="none"
-                    stroke="#FFF"
-                    stroke-width="2"
-                    d="M1 1l8.836 8.836L1 18.671"
-                  />
-                </svg>
-              </button>
-              <img
-                class="form__error-icon"
-                id="error-icon"
-                src="./assets/icons/icon-error.svg"
-                alt=""
-              />
-              <p class="form__error-message">Please provide a valid email</p>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <small class="footer__attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Frontend Mentor </a
-        ><br />
-        Coded by
-        <a
-          href="https://github.com/amansgz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @amansgz
-        </a>
-      </small>
-    </footer>
-  </body>
 </html>

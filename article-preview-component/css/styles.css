@@ -9,36 +9,35 @@
 
   /* Fonts */
   --font-family-body: "Manrope", sans-serif;
+  --font-size-body: 13px;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 }
+*,
 *:before,
-*:after,
-* {
-  padding: 0;
-  margin: 0;
+*:after {
   box-sizing: border-box;
-}
-html {
-  font-size: 13px;
+  margin: 0;
+  padding: 0;
 }
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
   background-color: var(--light-grayish-blue);
 }
 .main-container {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   padding: 1rem;
 }
 
 .card {
-  max-width: 325px;
+  max-width: min(325px, 90vw);
   margin-bottom: 2rem;
   border-radius: 10px;
   background-color: var(--color-neutral-white);
@@ -75,11 +74,11 @@ body {
 }
 
 .card__footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  position: relative;
 }
 .card__profile {
   display: flex;
@@ -107,18 +106,19 @@ body {
   color: var(--desaturated-dark-blue);
 }
 .card__button-share {
-  width: 35px;
-  height: 35px;
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  position: relative;
+  width: 35px;
+  height: 35px;
+
   border: none;
   border-radius: 50%;
   background-color: var(--light-grayish);
   cursor: pointer;
-
   z-index: 20;
   transition: background-color 0.1s ease;
 }
@@ -129,10 +129,10 @@ body {
   fill: var(--color-neutral-white);
 }
 .card__nav {
-  background-color: var(--very-dark-grayish-blue);
   display: none;
   align-items: center;
   gap: 1rem;
+  background-color: var(--very-dark-grayish-blue);
 }
 .card__social-links {
   list-style: none;
@@ -141,17 +141,17 @@ body {
   gap: 1rem;
 }
 .card__social-links-text {
-  text-decoration: none;
   font-size: 0.8rem;
   font-weight: var(--font-weight-medium);
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--grayish-blue);
 }
 /* Classes for JavaScript */
 .card__footer.active {
-  background-color: var(--very-dark-grayish-blue);
   border-radius: 0 0 10px 10px;
+  background-color: var(--very-dark-grayish-blue);
 }
 .card__footer.active .card__profile {
   display: none;
@@ -160,8 +160,8 @@ body {
   display: flex;
 }
 .card__footer.active .card__button-share {
-  background-color: var(--desaturated-dark-blue);
   position: relative;
+  background-color: var(--desaturated-dark-blue);
   z-index: 30;
 }
 .card__footer.active .card__button-icon path {
@@ -176,18 +176,18 @@ body {
 .footer__attribution {
   color: var(--desaturated-dark-blue);
 }
-.footer__attribution a {
+.footer__attribution-link {
   text-decoration: none;
   color: var(--desaturated-dark-blue);
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.footer__attribution a:hover,
-.footer__attribution a:focus {
+.footer__attribution-link:hover,
+.footer__attribution-link:focus {
   color: var(--very-dark-grayish-blue);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .card {
     display: flex;
     max-width: 730px;
