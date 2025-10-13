@@ -1,30 +1,42 @@
 :root {
-  /* Base colors: Main project palette*/
-  --slate-300: hsl(212, 45%, 89%);
-  --slate-500: hsl(216, 15%, 48%);
-  --slate-900: hsl(218, 44%, 22%);
-  --white: hsl(0, 0%, 100%);
+  /* Colors */
+  --color-blue: hsl(217, 93%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
 
   /* Purpose colors: Used for specific elements */
-  --main-bg: var(--slate-300);
-  --card-bg: var(--white);
-  --card-title-color: var(--slate-900);
-  --card-text-color: var(--slate-500);
-  --card-shadow-color: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  --main-bg: var(--color-slate-300);
+  --card-bg: var(--color-white);
+  --card-title-color: var(--color-slate-900);
+  --card-text-color: var(--color-slate-500);
 
-  --footer-bg: var(--slate-300);
-  --footer-text-color: var(--slate-500);
-  --footer-attribution-link-hover-color: var(--slate-900);
+  --footer-bg: var(--color-slate-300);
+  --footer-text-color: var(--color-slate-900);
+  --footer-attribution-link-hover-color: var(--color-blue);
 
   /* Fonts */
   --font-family-body: "Outfit", sans-serif;
 
   --font-size-base: 15px;
-  --font-size-title: clamp(1.2rem, 3vw, 1.5rem);
-  --font-size-text: clamp(0.875rem, 2.5vw, 1rem);
+  --font-size-title: 22px;
+  --font-size-text: 15px;
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+
+  /* Border radius */
+  --border-radius-sm: 10px;
+  --border-radius-md: 20px;
+
+  /* Shadows */
+  --shadow-subtle: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 *,
 *::before,
@@ -48,56 +60,48 @@ body {
   align-items: center;
   flex-grow: 1; /* Pushes footer to the bottom */
 
-  padding: 1rem;
+  padding: var(--spacing-200);
   background-color: var(--main-bg);
-  min-height: calc(100vh - 80px); /* according to the footer */
 }
 .qr-card {
   display: flex;
   flex-direction: column;
-  max-width: min(330px, 90vw);
-  min-height: 400px;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: var(--card-bg);
-  box-shadow: var(--card-shadow-color);
-}
-.qr-card__content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem; /* Adds space between items */
-  flex-grow: 1; /* cover disponible space */
   text-align: center;
-  padding: 1rem 0;
+  gap: var(--spacing-300); /* Adds space between items */
+
+  max-width: min(320px, 90vw);
+  padding: var(--spacing-200);
+  padding-bottom: var(--spacing-500);
+  border-radius: var(--border-radius-md);
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-subtle);
 }
 .qr-card__image {
   display: block;
-  width: 100%;
-  height: auto;
-  min-height: 240px;
-  border-radius: 12px;
+  max-width: 100%;
+  border-radius: var(--border-radius-sm);
 }
+
 .qr-card__title {
-  max-width: 18ch;
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-bold);
   color: var(--card-title-color);
+  line-height: 1.2;
 }
 .qr-card__text {
-  max-width: 26ch;
   font-size: var(--font-size-text);
   color: var(--card-text-color);
-  line-height: 1.5;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  padding: 0 var(--spacing-200);
 }
 .footer {
-  padding: 1rem;
+  padding: var(--spacing-200);
   text-align: center;
   background-color: var(--footer-bg);
 }
 .footer__attribution {
-  font-size: 0.9rem;
   color: var(--footer-text-color);
 }
 .footer__attribution-link {

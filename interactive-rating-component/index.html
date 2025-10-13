@@ -7,8 +7,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Interactive Rating Component</title>
   <meta name="description"
@@ -24,7 +24,9 @@
   <main>
     <!-- Rating state start -->
     <article class="card" id="cardRates">
-      <img class="card__icon" src="./assets/icon-star.svg" alt="" aria-hidden="true">
+      <div class="card__icon">
+        <img src="./assets/icon-star.svg" alt="" aria-hidden="true" width="14" height="14">
+      </div>
       <h1 class="card__title">How did we do?</h1>
       <p class="card__text">
         Please let us know how we did with your support request. All feedback
