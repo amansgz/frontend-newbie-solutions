@@ -1,56 +1,44 @@
 # 🚀 QR Code Component
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-FF2D5F?style=for-the-badge&logo=figma&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
-
-![Desktop preview](./design/preview.jpg)
-
-## 📋 Table of contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Built with](#-built-with)
-- [Links](#-links)
-- [What I Learned](#-what-i-learned)
-- [Author](#-author)
-- [Acknowledgments](#-acknowledgments)
-
-## 📖 Overview
+## Welcome! 👋
 
 This project is my solution to the "QR Code Component" from Frontend Mentor. The goal was to build the optimal layout for the site depending on their device's screen size that closely matches the provided design.
 
 Original Challenge: [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
-## ✨ Features
+Part of the [Getting started on Frontend Mentor Learning Path](https://www.frontendmentor.io/learning-paths) on Frontend Mentor.
 
-- **Responsive Layout:** The component adapts to different screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
-- **Perfect Centering:** The QR code card centered both horizontally and vertically on the page using modern Flexbox techniques.
-- **Clean and Accesible Code:** The project uses semantic HTML and includes a screen reader-only heading to improve accessibility and provide proper context for assistive technologies.
+![Design preview for the QR code component coding challenge](./design/preview.jpg)
+
+## 📋 Table of contents
+
+- [Built with](#-built-with)
+- [Live Preview](#-live-preview)
+- [What I Learned](#-what-i-learned)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
 ## 🛠 Built with
 
-- Semantic HTML5 markup
-- CSS Custom Properties
-- BEM methodology
-- Flexbox
-- Mobile-first workflow
+- **HTML5**: Semantic markup for structure and accessiblity.
+- **CSS3**: Modern styling with Flexbox, and custom properties.
+- **Figma**: For design analysis and implementation.
 
-## 🔗 Links
+## 🔗 Live Preview
 
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://qr-card-solution.netlify.app)
 
 ## 📚 What I Learned
 
-This project was an excellent exercise in building a semantically correct and accessible component. Here are the key takeaways:
+This project was an excellent exercise in building a semantically correct component. Here are the key takeaways:
 
 - **HTML Semantics:** I used an `<article>` element to wrap the card component, as it represents a self-contained composition that makes sense on its own.
-- **Methodology:** Implemented the BEM (Block, Element, Modifier) naming convention for my CSS classes to create a clear, maintainable, and scalable structure.
-- **CSS Custom Properties:** Defined global CSS custom properties (variables) for the base colors according to the style guide. I also used specific variables for elements like the card and footer, as well as for typography (font family, sizes, and weights) to ensure consistency and easy theming.
+- **CSS Custom Properties:** Defined global CSS custom properties (variables) for the base colors and spacings according to the style guide.
 - **Layout & Centering:** Centered the card perfectly by applying Flexbox to both the `body` and `main` elements. This technique also naturally pushes the footer to the bottom of the viewport.
 - **Component Layout:** Used Flexbox inside the card to align its elements (image, title, text) neatly, utilizing the `gap` property for precise spacing without margins.
-- **Responsive Design:** Built the component with a **mobile-first** approach, ensuring it looks great and functions perfectly on all devices, starting from a viewport width of 320px.
 
 ## 👩‍💻 Author
 
@@ -59,4 +47,4 @@ This project was an excellent exercise in building a semantically correct and ac
 
 ## 🙌 Acknowledgments
 
-[Frontend Mentor](https://www.frontendmentor.io) for providing this challenge and helping developers improve their skills through realistic projects.
+- Challenge provided by [Frontend Mentor](https://www.frontendmentor.io).

@@ -1,43 +1,38 @@
 :root {
   /* Colors */
-  --color-blue: hsl(217, 93%, 48%);
+  --color-blue: hsl(217, 79%, 50%);
   --color-white: hsl(0, 0%, 100%);
   --color-slate-300: hsl(212, 45%, 89%);
   --color-slate-500: hsl(216, 15%, 48%);
   --color-slate-900: hsl(218, 44%, 22%);
 
-  /* Purpose colors: Used for specific elements */
-  --main-bg: var(--color-slate-300);
-  --card-bg: var(--color-white);
-  --card-title-color: var(--color-slate-900);
-  --card-text-color: var(--color-slate-500);
-
-  --footer-bg: var(--color-slate-300);
-  --footer-text-color: var(--color-slate-900);
-  --footer-attribution-link-hover-color: var(--color-blue);
-
   /* Fonts */
-  --font-family-body: "Outfit", sans-serif;
+  --ff-base: "Outfit", sans-serif;
 
-  --font-size-base: 15px;
-  --font-size-title: 22px;
-  --font-size-text: 15px;
+  --fs-base: 15px;
+  --fs-sm: 0.9rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.46rem;
 
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  --fw-regular: 400;
+  --fw-bold: 700;
 
   /* Spacing */
-  --spacing-200: 16px;
-  --spacing-300: 24px;
-  --spacing-500: 40px;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1.06rem;
+  --spacing-300: 1.6rem;
+  --spacing-500: 2.66rem;
 
-  /* Border radius */
+  --spacing-responsive: clamp(0.75rem, 1.5vw, 1.25rem);
+
+  /* Border Radius */
   --border-radius-sm: 10px;
   --border-radius-md: 20px;
 
   /* Shadows */
   --shadow-subtle: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 *,
 *::before,
 *::after {
@@ -45,72 +40,93 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: var(--fs-base);
+}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-base);
+  font-family: var(--ff-base);
+  background-color: var(--color-slate-300);
 }
-.main-container {
-  /* Center the card horizontally and vertically*/
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1; /* Pushes footer to the bottom */
+  flex-grow: 1;
 
-  padding: var(--spacing-200);
-  background-color: var(--main-bg);
+  padding: var(--spacing-responsive);
 }
-.qr-card {
+/* QR code component */
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--spacing-300); /* Adds space between items */
+  gap: var(--spacing-300);
 
-  max-width: min(320px, 90vw);
-  padding: var(--spacing-200);
-  padding-bottom: var(--spacing-500);
+  max-width: min(21.34rem, 90vw);
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
+
+  text-align: center;
   border-radius: var(--border-radius-md);
-  background-color: var(--card-bg);
+  background-color: var(--color-white);
   box-shadow: var(--shadow-subtle);
 }
-.qr-card__image {
+.card-img {
   display: block;
   max-width: 100%;
   border-radius: var(--border-radius-sm);
 }
-
-.qr-card__title {
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-bold);
-  color: var(--card-title-color);
-  line-height: 1.2;
-}
-.qr-card__text {
-  font-size: var(--font-size-text);
-  color: var(--card-text-color);
-  line-height: 1.4;
-  letter-spacing: 0.2px;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
   padding: 0 var(--spacing-200);
 }
+.card-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  color: var(--color-slate-900);
+}
+.card-text {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  line-height: 1.4;
+  letter-spacing: 0.0133rem;
+  color: var(--color-slate-500);
+}
+
+/* Footer with attribution */
 .footer {
-  padding: var(--spacing-200);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  padding: var(--spacing-responsive);
   text-align: center;
-  background-color: var(--footer-bg);
 }
-.footer__attribution {
-  color: var(--footer-text-color);
+.attribution {
+  font-size: var(--fs-sm);
+  color: var(--color-slate-900);
 }
-.footer__attribution-link {
-  color: var(--footer-text-color);
+.attribution-link {
   text-decoration: none;
+  color: var(--color-slate-900);
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.2s ease;
 }
-.footer__attribution-link:hover,
-.footer__attribution-link:focus {
-  color: var(--footer-attribution-link-hover-color);
+.attribution-link:hover {
+  color: var(--color-blue);
+}
+.attribution-link:focus {
+  outline: 1px solid var(--color-slate-900);
+  outline-offset: 2px;
+  color: var(--color-blue);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution-link {
+    transition-duration: 0.01ms;
+  }
 }
