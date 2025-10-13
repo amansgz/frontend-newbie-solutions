@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Product Preview Card Component</title>
   <meta name="description"
@@ -20,9 +21,10 @@
   <main class="main-container">
     <article class="product-card">
       <picture class="product-card__image-container">
-        <source media="(min-width: 768px)" srcset="./assets/image-product-desktop.jpg">
-        <img class="product-card__image" src="./assets/image-product-mobile.jpg"
-          alt="Gabrielle Essence Eau De Parfum bottle resting on a table" loading="lazy">
+        <source media="(min-width: 48em)" srcset="./assets/image-product-desktop.webp">
+        <img class="product-card__image" src="./assets/image-product-mobile.webp"
+          alt="Gabrielle Essence Eau De Parfum bottle resting on a table" width="686" height="480" loading="eager"
+          fetchpriority="high">
       </picture>
 
       <div class="product-card__content">
@@ -44,14 +46,15 @@
             $169.99</span>
         </div>
 
-        <button class="product-card__button" aria-label="Add Gabrielle Essence Eau De Parfum to shopping cart">
-          <img class="product-card__button-icon" src="./assets/icon-cart.svg" alt="" aria-hidden="true">
+        <button type="button" class="product-card__button"
+          aria-label="Add Gabrielle Essence Eau De Parfum to shopping cart">
+          <img class="product-card__button-icon" src="./assets/icon-cart.svg" alt="" aria-hidden="true"
+            type="image/svg+xml">
           Add to Cart
         </button>
       </div>
     </article>
   </main>
-
   <footer class="footer" aria-label="Challenge attribution information">
     <p class="footer__attribution">
       Challenge by

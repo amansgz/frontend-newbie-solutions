@@ -1,6 +1,7 @@
 # 🚀 Product Preview Card Component
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white)
+
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
@@ -22,6 +23,8 @@ This project is my solution to the "Product Preview Card Component" from Fronten
 
 Original Challenge: [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
+Part of the [Building Responsive Layouts Learning Path](https://www.frontendmentor.io/learning-paths) on Frontend Mentor.
+
 ## 🛠 Built with
 
 - Semantic HTML5 markup
@@ -32,7 +35,7 @@ Original Challenge: [Product preview card component challenge on Frontend Mentor
 
 ## 🔗 Links
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://product-card-solution-css.netlify.app)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://amansgz.github.io/product-preview-card/)
 
 ## 📚 What I Learned
 
@@ -43,6 +46,9 @@ This project was an excellent exercise in creating a responsive and accesible co
 
 2. **Structuring CSS with Spacing Variables**
    To ensure visual consistency and make the stylesheet more maintainable, I implemented a system of CSS custom properties (variables) for spacing. I defined a set of variables like `--spacing-lg` to represent consistent values for margins and padding throughout the component. This approach made it incredibly easy to maintain a uniform rhythm and scale, and any future adjustments to the spacing can now made in a single place, propagating the changes globally.
+
+3. **Performance Optimization Journey**
+   Through rigorous testing and optimization, achieved near-perfect lighthouse scores. Key strategies included WebP image implementation, critical resource prioritization with 'fecthpriority', and CSS delivery optimization.
 
 ## 👩‍💻 Author
 
