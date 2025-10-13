@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile Card Component</title>
+  <meta name="description"
+    content="View user profiles with elegant card design. Display profile information and social media stats in a clean, modern interface.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main class="main-container">
+    <article class="profile-card">
+      <header class="profile-card__header">
+        <img class="profile-card__bg" src="./assets/bg-pattern-card.svg" alt="" aria-hidden="true">
+        <img class="profile-card__avatar" src="./assets/image-victor.jpg" alt="Victor Crest" loading="lazy">
+      </header>
+
+      <div class="profile-card__content">
+        <h1 class="profile-card__name">
+          Victor Crest <span class="profile-card__age">26</span>
+        </h1>
+        <p class="profile-card__location">London</p>
+      </div>
+
+      <footer class="profile-card__footer">
+        <ul class="profile-card__stats">
+          <li class="profile-card__stats-item">
+            <span class="profile-card__number">80K</span>
+            <span class="profile-card__label">Followers</span>
+          </li>
+          <li class="profile-card__stats-item">
+            <span class="profile-card__number"> 803K</span>
+            <span class="profile-card__label">Likes</span>
+          </li>
+          <li class="profile-card__stats-item">
+            <span class="profile-card__number"> 1.4K</span>
+            <span class="profile-card__label">Photos</span>
+          </li>
+        </ul>
+      </footer>
+    </article>
+  </main>
+  <footer class="footer" aria-label="Challenge attribution information">
+    <p class="footer__attribution">
+      Challenge by
+      <a class="footer__attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Visit Frontend Mentor website (opens in new window)">
+        Frontend Mentor
+      </a>
+    </p>
+    <p class="footer__attribution">
+      Coded by
+      <a class="footer__attribution-link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer"
+        aria-label="Visit amansgz Github profile (opens in new window)">@amansgz</a>
+    </p>
+  </footer>
+</body>
+
+</html>
