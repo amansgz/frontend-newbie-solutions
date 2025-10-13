@@ -7,8 +7,6 @@ Each challenge focuses on different fundamental concepts of HTML, CSS and JavaSc
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-Fundamental challenges focusing in layout, styling and responsive design.
-
 1.  **QR Code Component**
     A perfect challenge to practice basic HTML and CSS structure. This component teaches proper container styling and center alignment techniques.
 
@@ -20,7 +18,7 @@ Fundamental challenges focusing in layout, styling and responsive design.
 
 2.  **Blog Preview Card**
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/)
+    [Live Demo](https://amansgz.github.io/blog-preview-card) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/)
     <div>
       <img src="./2_blog-preview-card/design/preview.jpg" alt="Desktop preview" width="230">
     </div>
@@ -135,14 +133,14 @@ Fundamental challenges focusing in layout, styling and responsive design.
 
 15. **Social Links Profile**
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/15_social-links-profile)
+    [Live Demo](https://amansgz.github.io/social-links-profile) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/15_social-links-profile)
     <div>
       <img src="./15_social-links-profile/design/preview.jpg" alt="Desktop preview" width="230">
     </div>
 
 16. **Recipe Page**
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/16_recipe-page)
+    [Live Demo](https://amansgz.github.io/recipe-page) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/16_recipe-page)
     <div>
       <img src="./16_recipe-page/design/preview.jpg" alt="Desktop preview" width="230">
     </div>
