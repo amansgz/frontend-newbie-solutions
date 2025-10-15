@@ -1,32 +1,27 @@
-const cardRates = document.getElementById("cardRates");
-const options = document.querySelectorAll('input[name="rate"]');
-const btnSubmit = document.querySelector(".btn__submit");
-const cardThanks = document.getElementById("cardThanks");
-const thanksMessage = document.getElementById("thanksMessage");
-const btnRateAgain = document.querySelector(".btn__rate__again");
+const ratingForm = document.getElementById("ratingForm");
+const confirmationMessage = document.getElementById("selectedRatingMessage");
+const ratingCard = document.getElementById("ratingCard");
+const confirmationCard = document.getElementById("confirmationCard");
+const btnRateAgain = document.getElementById("btnRateAgain");
 
-// get the value of selected option rate
-let option_value_selected;
-
-options.forEach((option) => {
-  option.addEventListener("click", () => {
-    if (option.checked) {
-      option_value_selected = option.value;
-    }
-  });
-});
-
-// show option rate selected with thanks message
-btnSubmit.addEventListener("click", (e) => {
+ratingForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (option_value_selected) {
-    cardRates.style.display = "none";
-    cardThanks.classList.add("show");
 
-    thanksMessage.innerText = `You selected ${option_value_selected} out of 5`;
+  const selectedOption = document.querySelector('input[name="rate"]:checked');
+
+  if (selectedOption) {
+    const selectedRating = selectedOption.value;
+
+    ratingCard.classList.toggle("card--hidden");
+    confirmationCard.classList.toggle("card--hidden");
+    confirmationMessage.textContent = `You selected ${selectedRating} out of 5`;
+  } else {
+    alert("Please select a rating before submitting");
   }
 });
 
 btnRateAgain.addEventListener("click", () => {
-  location.reload();
+  confirmationCard.classList.toggle("card--hidden");
+  ratingCard.classList.toggle("card--hidden");
+  ratingForm.reset();
 });

@@ -19,54 +19,65 @@
 
 <body>
   <main>
-    <!-- Rating state start -->
-    <article class="card" id="cardRates">
+    <article class="card" id="ratingCard">
       <div class="card__icon">
         <img src="./assets/icon-star.svg" alt="" aria-hidden="true" width="14" height="14">
       </div>
-      <h1 class="card__title">How did we do?</h1>
-      <p class="card__text">
-        Please let us know how we did with your support request. All feedback
-        is appreciated to help us improve our offering!
-      </p>
 
-      <form novalidate>
-        <fieldset class="options__rate">
-          <input type="radio" name="rate" value="1" id="rate1">
-          <label for="rate1" class="option"> 1 </label>
+      <div class="card__content">
+        <h1 class="card__title">How did we do?</h1>
+        <p class="card__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
 
-          <input type="radio" name="rate" value="2" id="rate2">
-          <label for="rate2" class="option"> 2 </label>
+      <form id="ratingForm" novalidate>
+        <fieldset class="options__fieldset">
+          <legend class="sr-only">Rate our service from 1 to 5</legend>
+          <div class="options__container">
+            <input type="radio" name="rate" value="1" id="rate1" aria-label="One star - Poor">
+            <label for="rate1" class="option"> 1 </label>
 
-          <input type="radio" name="rate" value="3" id="rate3">
-          <label for="rate3" class="option"> 3 </label>
+            <input type="radio" name="rate" value="2" id="rate2" aria-label="Two stars - Fair">
+            <label for="rate2" class="option"> 2 </label>
 
-          <input type="radio" name="rate" value="4" id="rate4">
-          <label for="rate4" class="option"> 4 </label>
+            <input type="radio" name="rate" value="3" id="rate3" aria-label="Three stars - Good">
+            <label for="rate3" class="option"> 3 </label>
 
-          <input type="radio" name="rate" value="5" id="rate5">
-          <label for="rate5" class="option"> 5 </label>
+            <input type="radio" name="rate" value="4" id="rate4" aria-label="Four stars - Very Good">
+            <label for="rate4" class="option"> 4 </label>
+
+            <input type="radio" name="rate" value="5" id="rate5" aria-label="Five stars - Excellent">
+            <label for="rate5" class="option"> 5 </label>
+          </div>
         </fieldset>
 
-        <button class="btn__submit" type="submit">Submit</button>
+        <button class="button button--submit" id="btnSubmit" type="submit" aria-describedby="submit-help">
+          Submit
+        </button>
+        <div id="submit-help" class="sr-only">Please select an option from 1 to 5 before submitting</div>
       </form>
     </article>
-    <!-- Rating state end -->
 
-    <!-- Thank you state start -->
-    <article class="card card__thanks" id="cardThanks">
-      <div class="thanks__img">
-        <img src="./assets/illustration-thank-you.svg" alt="illustration thank you">
+    <article class="card card--confirmation card--hidden" id="confirmationCard" role="alert" aria-live="polite">
+      <div class="card__illustration" aria-hidden="true">
+        <img src="./assets/illustration-thank-you.svg" alt="">
       </div>
-      <p class="thanks__message" id="thanksMessage"></p>
-      <h2 class="card__title thanks__title">Thank you!</h2>
-      <p class="card__text thanks__text">
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
-      <button class="btn__rate__again">Rate again</button>
+
+      <div class="card__content">
+        <p class="card__rating-result" id="selectedRatingMessage"></p>
+        <h2 class="card__title">Thank you!</h2>
+        <p class="card__text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+
+        <button class="button button--rate-again" type="button" id="btnRateAgain" aria-label="Rate again">Rate
+          again</button>
+      </div>
     </article>
-    <!--Thank you state end -->
+
   </main>
 
   <footer class="footer" aria-label="Challenge attribution information">

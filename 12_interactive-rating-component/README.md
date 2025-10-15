@@ -41,6 +41,11 @@ Original Challenge: [Interactive rating component challenge on Frontend Mentor](
 
 ## 📚 What I Learned
 
+- ARIA attributes for dynamic content announcements
+- Semantic HTML form structure with screen readers in mind
+- CSS utility classes for reusable component states
+- Accesible UI pattern for rating systems
+
 ## 👩‍💻 Author
 
 - Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
