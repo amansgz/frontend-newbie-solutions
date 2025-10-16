@@ -5,44 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
   <title>Results Summary Component</title>
   <meta name="description"
     content="Visualize your performance results. Clear summary displays with score breakdowns, progress tracking, and achievement highlights.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./javascript/data.json"></script>
+  <script src="./javascript/main.js" defer></script>
 </head>
 
 <body>
   <main class="main-container">
     <section>
       <div class="container">
-        <div class="result">
-          <h1 class="result__title">Your Result</h1>
-          <div class="result__number">
-            <span>76</span>
+        <article class="card card--result">
+          <h1 class="card__title">Your Result</h1>
+          <div class="card__number">
+            <span id="totalScore"></span>
             <span>of 100</span>
           </div>
-          <h2 class="result__subtitle">Great</h2>
-          <p class="result__description">
+          <h2 class="card__subtitle">Great</h2>
+          <p class="card__description">
             You scored higher than 65% of the people who have taken these
             tests.
           </p>
-        </div>
+        </article>
 
-        <div class="summary">
-          <h2 class="summary__title">Summary</h2>
+        <article class="card card--summary">
+          <h2 class="card__title card__title--summary">Summary</h2>
 
-          <div id="scores"></div>
+          <div class="scores-container" id="scores"></div>
           <a href="#" class="btn__continue"> Continue </a>
-        </div>
+
+        </article>
       </div>
-      <!-- end of container -->
     </section>
   </main>
+
   <footer class="footer" aria-label="Challenge attribution information">
     <p class="footer__attribution">
       Challenge by

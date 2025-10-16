@@ -1,0 +1,77 @@
+:root {
+  /* Colors */
+  --color-primary-light-red: hsl(0, 100%, 67%);
+  --color-primary-orangey-yellow: hsl(39, 100%, 56%);
+  --color-primary-green-teal: hsl(166, 100%, 37%);
+  --color-primary-cobalt-blue: hsl(234, 85%, 45%);
+
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-pale-blue: hsl(221, 100%, 96%);
+  --color-neutral-light-lavender: hsl(241, 100%, 89%);
+  --color-neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* For Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --transparency-red: hsla(0, 100%, 67%, 0.1);
+  --transparency-yellow: hsla(39, 100%, 56%, 0.1);
+  --transparency-teal: hsla(166, 100%, 37%, 0.1);
+  --transparency-blue: hsla(234, 85%, 45%, 0.1);
+
+  --light-gray-blue: hsl(224, 30%, 35%);
+
+  /* Fonts */
+  --font-family-body: "Hanken Grotesk", sans-serif;
+  --font-size-base: 18px;
+
+  --fs-sm: clamp(0.75rem, 1.5vw, 0.875rem); /* 12px - 14px */
+  --fs-md: clamp(1rem, 2.2vw, 1.125rem); /* 16px - 18px */
+  --fs-lg: clamp(1.25rem, 2.8vw, 1.375rem); /* 20px - 22px */
+  --fs-xl: clamp(1.5rem, 3.5vw, 1.625rem); /* 24px - 26px */
+  --fs-xxl: 3.5rem;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  /* Spacings */
+  --spacing-sm: clamp(0.75rem, 1.5vw, 0.875rem); /* 12px - 14px */
+  --spacing-md: clamp(1rem, 2.2vw, 1.125rem); /* 16px - 18px */
+  --spacing-lg: clamp(1.25rem, 2.8vw, 1.375rem); /* 20px - 22px */
+
+  /* Gaps */
+  --gap-sm: clamp(0.75rem, 1.5vw, 0.875rem); /* 12px - 14px */
+  --gap-md: clamp(1rem, 2.2vw, 1.125rem); /* 16px - 18px */
+  --gap-lg: clamp(1.25rem, 2.8vw, 1.375rem); /* 20px - 22px */
+
+  /* Border Radius */
+  --border-radius-sm: 12px;
+  --border-radius-md: 20px;
+  --border-radius-lg: 24px;
+  --border-radius-xl: 38px;
+
+  /* Box shadows */
+  --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: var(--font-size-base);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: var(--font-family-body);
+  background-color: var(--color-neutral-pale-blue);
+}

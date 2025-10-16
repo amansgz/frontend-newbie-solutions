@@ -1,6 +1,7 @@
 # 🚀 Results Summary Component
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 A modern, responsive solution to the Frontend Mentor challenge. Built with modern practices and cutting-edge technologies.
 
@@ -18,6 +19,7 @@ A modern, responsive solution to the Frontend Mentor challenge. Built with moder
 ## 📖 Overview
 
 This project is my solution to the "Results Summary Component" from Frontend Mentor.
+
 The challenge:
 
 - Build the optimal layout for the site depending on their device's screen size that closely matches the provided design.
@@ -41,6 +43,12 @@ Original Challenge: [Results summary component challenge on Frontend Mentor](htt
 [![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)]()
 
 ## 📚 What I Learned
+
+### JavaScript Concepts
+
+- **JSON Data Handling**: Fetching JSON data to dynamically populate content
+- **DOM Manipulation**: Using `insertAdjacentHTML()` for DOM updates
+- **Array Methods**: Utilizing `reduce()` to calculate total scores and `map()` for HTML template generation
 
 ## 👩‍💻 Author
 
