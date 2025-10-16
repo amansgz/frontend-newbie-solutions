@@ -40,7 +40,7 @@ Original Challenge: [Results summary component challenge on Frontend Mentor](htt
 
 ## 🔗 Links
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)]()
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)](https://results-summary-component-css.netlify.app)
 
 ## 📚 What I Learned
 

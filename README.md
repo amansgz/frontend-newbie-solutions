@@ -107,7 +107,7 @@ Each challenge focuses on different fundamental concepts of HTML, CSS and JavaSc
 12. **Interactive Rating Component**
     Rating component that changes state after submission. Basic JavaScript for interaction.
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/12_interactive-rating-component)
+    [Live Demo](https://interactive-rating-component-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/12_interactive-rating-component)
 
     <div>
       <img src="./12_interactive-rating-component/design/preview.jpg" alt="Desktop preview" width="230">
@@ -116,7 +116,7 @@ Each challenge focuses on different fundamental concepts of HTML, CSS and JavaSc
 13. **Results Summary Component**
     Component that displays results with dynamic data. Requiers JSON data processing with JavaScript.
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/13_results-summary-component)
+    [Live Demo](https://results-summary-component-css.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/13_results-summary-component)
 
     <div>
       <img src="./13_results-summary-component/design/preview.jpg" alt="Desktop preview" width="230">
