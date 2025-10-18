@@ -17,18 +17,20 @@
 
     <article class="card">
       <div class="card__image-container">
-        <picture class="card__image">
-          <source media="(max-width: 768px)" srcset="./assets/illustration-woman-online-mobile.svg">
-          <img src="./assets/illustration-woman-online-desktop.svg" alt="">
-        </picture>
+        <div class="card__image-bg">
+          <picture class="card__image">
+            <source media="(min-width: 768px)" srcset="./assets/illustration-woman-online-desktop.svg">
+            <img src="./assets/illustration-woman-online-mobile.svg" alt="">
+          </picture>
+        </div>
+
+        <img class="card__image--box" src="./assets/illustration-box-desktop.svg" alt="" />
+
       </div>
-      <!-- 
-      <picture class="box-img">
-        <img src="./assets/illustration-box-desktop.svg" alt="little box" />
-      </picture> -->
 
       <div class="accordion" id="accordion-container">
         <h1 class="accordion__title">FAQ</h1>
+        <div class="accordion__cursor"></div>
 
         <details class="accordion__item">
           <summary class="accordion__question">

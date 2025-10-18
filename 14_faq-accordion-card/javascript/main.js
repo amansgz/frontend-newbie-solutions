@@ -1,5 +1,5 @@
-/* Using toggle event from details and using hasAttribute or removeAttribute open*/
 document.addEventListener("DOMContentLoaded", () => {
+  /* Opens details summary item one at a time, using toggle event, hasAttribute and removeAttribute open */
   const accordionItems = document.querySelectorAll(".accordion__item");
 
   accordionItems.forEach((item) => {
@@ -13,12 +13,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  /* Shows hand cursor effect with mouse event */
+  const accordion = document.getElementById("accordion-container");
+  const cursor = document.querySelector(".accordion__cursor");
+
+  accordion.addEventListener("mousemove", (e) => {
+    cursor.style.left =
+      e.clientX - accordion.getBoundingClientRect().left + "px";
+    cursor.style.top = e.clientY - accordion.getBoundingClientRect().top + "px";
+  });
 });
-
 /* 
-another solution, using toggle event from details
-and using .open false
-
+Alternative solution: to open the details summary (one at a time), using the toggle event and .open false 
 document.addEventListener("DOMContentLoaded", () => {
   const accordionItems = document.querySelectorAll(".accordion__item");
 

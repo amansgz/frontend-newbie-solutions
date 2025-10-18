@@ -125,7 +125,7 @@ Each challenge focuses on different fundamental concepts of HTML, CSS and JavaSc
 14. **FAQ Accordion Card**
     Interactive FAQ section with collapsing answers. Excellent practice for JavaScript event handling and CSS animations.
 
-    [Live Demo]() - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/14_faq-accordion-card)
+    [Live Demo](https://faq-accordion-card-css-solution.netlify.app) - [Code](https://github.com/amansgz/frontend-newbie-solutions/tree/main/14_faq-accordion-card)
 
     <div>
       <img src="./14_faq-accordion-card/design/desktop-preview.jpg" alt="Desktop preview" width="230">
